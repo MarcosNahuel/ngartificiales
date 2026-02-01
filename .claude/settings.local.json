@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(n8n)",
+      "mcp__n8n__get_workflow_details"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "github",
+    "vercel",
+    "context7",
+    "supabase",
+    "next-devtools"
+  ]
+}

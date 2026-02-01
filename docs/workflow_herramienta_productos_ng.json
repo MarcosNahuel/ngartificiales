@@ -1,0 +1,730 @@
+{
+  "name": "Herramienta Productos - NG Artificiales",
+  "nodes": [
+    {
+      "parameters": {
+        "inputSource": "jsonExample",
+        "jsonExample": "{\n  \"query\": \"señuelo para trucha\",\n  \"mensaje\": \"¿cuál me recomendás para trolling en lago?\"\n}"
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [-1744, 1216],
+      "id": "trigger-ng-001",
+      "name": "When Executed by Another Workflow"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "save-query",
+              "name": "query",
+              "value": "={{ $json.query }}",
+              "type": "string"
+            },
+            {
+              "id": "save-message",
+              "name": "mensaje",
+              "value": "={{ $json.mensaje }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [-1552, 1216],
+      "id": "save-input-ng",
+      "name": "Save Input Client"
+    },
+    {
+      "parameters": {
+        "url": "https://api.tiendanube.com/v1/2590356/products?page=1&per_page=100",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authentication",
+              "value": "bearer ef6b2de9459410120bd24f9ef631aebbe00405f5"
+            },
+            {
+              "name": "User-Agent",
+              "value": "NG Artificiales (support@ngartificiales.com)"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [-1312, 1216],
+      "id": "get-products-ng",
+      "name": "GET Productos NG"
+    },
+    {
+      "parameters": {
+        "jsCode": "// --- CODE NODE: dataset para matching LLM ---\n// Adaptado para NG Artificiales\n\nconst MAX_BODY_CHARS = 200000;\n\nfunction toStringSafe(v) {\n  if (v === null || v === undefined) return '';\n  if (typeof v === 'string') return v;\n  try { return JSON.stringify(v); } catch { return String(v); }\n}\n\nfunction cleanHtml(html, maxLen = MAX_BODY_CHARS) {\n  let s = toStringSafe(html);\n  s = s.replace(/\\s*<\\s*br\\s*\\/?>\\s*/gi, '\\n');\n  s = s.replace(/<\\/p\\s*>\\s*/gi, '\\n');\n  s = s.replace(/<\\/li\\s*>\\s*/gi, '\\n• ');\n  s = s.replace(/<[^>]+>/g, ' ');\n\n  const ents = {\n    '&nbsp;': ' ', '&amp;': '&', '&lt;': '<', '&gt;': '>',\n    '&quot;': '\"', '&#39;': \"'\", '&ndash;': '-', '&mdash;': '-',\n    '&aacute;': 'á', '&eacute;': 'é', '&iacute;': 'í',\n    '&oacute;': 'ó', '&uacute;': 'ú', '&ntilde;': 'ñ',\n    '&Aacute;': 'Á', '&Eacute;': 'É', '&Iacute;': 'Í',\n    '&Oacute;': 'Ó', '&Uacute;': 'Ú', '&Ntilde;': 'Ñ'\n  };\n  s = s.replace(/&[a-z#0-9]+;/gi, m => (m in ents ? ents[m] : ' '));\n  s = s.replace(/https?:\\/\\/\\S+/gi, ' ');\n  s = s.replace(/[ \\t]+/g, ' ').replace(/\\s*\\n\\s*/g, '\\n').replace(/\\n{3,}/g, '\\n\\n').trim();\n\n  if (s.length > maxLen) s = s.slice(0, maxLen).trim() + '…';\n  return s;\n}\n\nfunction getTagsFromCategories(categories) {\n  if (!Array.isArray(categories)) return [];\n  return categories\n    .map(cat => cat && cat.name && cat.name.es ? cat.name.es.trim() : null)\n    .filter(Boolean);\n}\n\n// Extrae especies objetivo del texto\nfunction extractEspecies(text) {\n  const especies = ['trucha', 'dorado', 'tararira', 'salmón', 'salmon', 'pejerrey',\n                    'surubí', 'surubi', 'boga', 'pacu', 'perca', 'corvina',\n                    'arcoíris', 'arcoiris', 'marrón', 'marron'];\n  const found = [];\n  const lower = text.toLowerCase();\n  especies.forEach(e => {\n    if (lower.includes(e)) found.push(e);\n  });\n  return [...new Set(found)];\n}\n\n// Extrae modalidades del texto\nfunction extractModalidades(text) {\n  const modalidades = ['spinning', 'trolling', 'baitcasting', 'casting', 'jigging', 'arrastre'];\n  const found = [];\n  const lower = text.toLowerCase();\n  modalidades.forEach(m => {\n    if (lower.includes(m)) found.push(m);\n  });\n  return [...new Set(found)];\n}\n\n// Extrae profundidad del texto\nfunction extractProfundidad(text) {\n  const match = text.match(/(\\d+(?:[,.]\\d+)?)[\\s]*(?:–|-|a|y)[\\s]*(\\d+(?:[,.]\\d+)?)[\\s]*(?:m|metros?)/i);\n  if (match) {\n    return `${match[1]} - ${match[2]} m`;\n  }\n  const matchSingle = text.match(/hasta[\\s]*(~?[\\s]*\\d+(?:[,.]\\d+)?)[\\s]*(?:m|metros?)/i);\n  if (matchSingle) {\n    return `Hasta ${matchSingle[1]} m`;\n  }\n  return null;\n}\n\n// ------------------ main ------------------\nconst appended_title = [];\nconst products_min = [];\nconst products_min_short = [];\nconst index_by_title = {};\n\nfor (const item of items) {\n  const p = item.json;\n  if (!p) continue;\n\n  const title = toStringSafe(p.name?.es).trim();\n  if (!title) continue;\n\n  const rawDesc = p.description?.es ?? '';\n  const descClean = cleanHtml(rawDesc, 1200);\n  const descShort = cleanHtml(rawDesc, 400);\n  const tagsArr = p.tags ? p.tags.split(',').map(t => t.trim()) : [];\n  const categoriesArr = getTagsFromCategories(p.categories);\n\n  // Extrae metadatos de pesca\n  const especies = extractEspecies(descClean);\n  const modalidades = extractModalidades(descClean);\n  const profundidad = extractProfundidad(descClean);\n\n  appended_title.push(title);\n\n  products_min.push({\n    title,\n    tags: [...tagsArr, ...categoriesArr],\n    desc_clean: descClean,\n    especies,\n    modalidades,\n    profundidad\n  });\n\n  products_min_short.push({\n    title,\n    tags: [...tagsArr, ...categoriesArr],\n    desc_clean: descShort\n  });\n\n  const variants = Array.isArray(p.variants)\n    ? p.variants.map(v => ({\n      title: v.values?.map(val => val.es).join(' / ') ?? '',\n      sku: v.sku ?? null,\n      price: (v.promotional_price !== undefined && v.promotional_price !== null ? v.promotional_price : v.price) ?? null,\n      inventory_quantity: v.stock ?? null\n    }))\n    : [];\n\n  index_by_title[title] = {\n    id: p.variants?.[0]?.sku ?? p.id ?? null,\n    handle: p.handle?.es ?? null,\n    vendor: p.brand ?? 'NG Artificiales',\n    product_type: categoriesArr[0] ?? null,\n    tags: [...tagsArr, ...categoriesArr],\n    body_text: cleanHtml(rawDesc, MAX_BODY_CHARS),\n    variants: variants,\n    especies,\n    modalidades,\n    profundidad,\n    url: p.canonical_url ?? null\n  };\n}\n\n// Orden alfabético\nconst byTitle = (a, b) => a.title.localeCompare(b.title);\nproducts_min.sort(byTitle);\nproducts_min_short.sort(byTitle);\nappended_title.sort((a, b) => a.localeCompare(b));\n\nconst stats = {\n  total_catalog: items.length,\n  returned_titles: appended_title.length,\n  with_desc: products_min.filter(x => x.desc_clean).length,\n  avg_desc_len: (() => {\n    const lens = products_min.map(x => x.desc_clean.length);\n    if (!lens.length) return 0;\n    return Math.round(lens.reduce((a, b) => a + b, 0) / lens.length);\n  })()\n};\n\nreturn [{\n  json: {\n    appended_title,\n    products_min,\n    products_min_short,\n    index_by_title,\n    stats\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [-976, 1216],
+      "id": "preprocess-ng",
+      "name": "Preprocesar Catálogo"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-pro-preview-03-25",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-pro-preview-03-25"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=## Consulta del usuario\n{{ $('Save Input Client').first().json.query }}\n\n## Mensaje adicional\n{{ $('Save Input Client').first().json.mensaje }}\n\n## APPENDED_TITLE\n{{ JSON.stringify($json.appended_title) }}\n\n## CANDIDATOS_MIN (JSON)\n{{ JSON.stringify($json.products_min_short) }}\n\n## INDEX_BY_TITLE (parcial)\n{{ JSON.stringify(Object.fromEntries(Object.entries($json.index_by_title).map(([k,v]) => [k, {\n  product_type: v.product_type,\n  tags: v.tags,\n  variants: v.variants,\n  especies: v.especies,\n  modalidades: v.modalidades,\n  profundidad: v.profundidad\n}]))) }}\n"
+            }
+          ]
+        },
+        "options": {
+          "systemMessage": "**ROL Y OBJETIVO**\nActuarás exclusivamente como un motor de coincidencia de productos altamente especializado en PESCA DEPORTIVA y equipamiento outdoor. Tu única función es analizar la consulta del usuario y, siguiendo una jerarquía estricta, decidir qué **títulos de producto** corresponden. **No converses: solo devuelve títulos.**\n\n> **Formato de salida único (sin excepciones):**\n> • Devuelve **solo** un **listado plano** con los **títulos exactos** (uno por línea, sin numeración ni viñetas), copiados literalmente desde `APPENDED_TITLE`.\n> • Si no hay coincidencias válidas, devuelve exactamente: `NO_MATCH`.\n> • **Prohibido**: JSON, comillas, Markdown o texto adicional.\n\n---\n\n## CONTEXTO DEL NEGOCIO\n\n**NG Artificiales** es una tienda argentina especializada en:\n- Señuelos de pesca (artificiales, crankbaits, minnows)\n- Equipamiento outdoor (térmicos, cuchillos, linternas)\n\n**Tipos de productos:**\n- Señuelos: Caimán, Caníbal, TNT, Extreme, Turbo, Mojarra, Morena, Cascarudo, Tábano\n- Combos: Baitcast, Trolling, Spinning\n- Outdoor: Térmicos, Cuchillos, Linternas\n\n---\n\n## ENTRADAS\n\nRecibirás en el **mensaje del usuario**:\n\n• **QUERY**: texto libre con la consulta del usuario.\n• **CANDIDATOS_MIN**: lista JSON de objetos `{ title, tags, desc_clean, especies, modalidades }`\n• **INDEX_BY_TITLE**: diccionario con detalles de cada producto\n• **APPENDED_TITLE** (lista blanca): array JSON con todos los títulos válidos\n\n> **Señales para el matching** (en este orden de importancia):\n>\n> 1. `title` (nombre del señuelo/producto)\n> 2. `especies` (trucha, dorado, tararira, salmón, pejerrey, surubí, boga, pacu, perca)\n> 3. `modalidades` (spinning, trolling, baitcasting, casting, jigging)\n> 4. `tags` (etiquetas de categoría)\n> 5. `desc_clean` (descripción del producto)\n\n**Normalización obligatoria:** ignora mayúsculas/minúsculas, tildes y espacios múltiples.\n\n**Sinónimos del sector:**\n- señuelo = artificial = cebo = cucharita = crankbait = minnow\n- caña = vara = equipo\n- reel = carrete = molinete\n- trolling = arrastre = curricán\n- spinning = lanzado\n- anzuelo = hook = triple\n\n---\n\n## JERARQUÍA DE ANÁLISIS (PROCESO OBLIGATORIO)\n\n**Paso 1 — Listado por especie o modalidad (máxima prioridad)**\nSi la **QUERY** pide productos para una ESPECIE o MODALIDAD específica:\n- \"señuelos para trucha\" → todos los productos con \"trucha\" en `especies`\n- \"algo para trolling\" → todos con \"trolling\" en `modalidades`\n- \"qué tienen para dorado\" → todos con \"dorado\" en `especies`\nDevuelve **mínimo 3** si existen. Si aplica, **entrega los títulos y detente**.\n\n**Paso 2 — Listado de categoría**\nSi la **QUERY** pide listar una familia completa:\n- \"qué señuelos tienen\" → todos los señuelos\n- \"ver cuchillos\" → todos los cuchillos\n- \"mostrame los combos\" → todos los combos\nDevuelve **mínimo 3** si existen.\n\n**Paso 3 — Coincidencia específica**\nSi no aplican los pasos anteriores, busca núcleos en título/tags/descripción:\n• **Exacto/modelo**: \"Caimán\", \"TNT Extreme\", \"Caníbal 95\"\n• **Semántica por función**: \"algo para pescar en lago\", \"señuelo de profundidad\"\n• **Correcciones ortográficas**: \"caiman\" → Caimán, \"canibal\" → Caníbal\n\n**Paso 4 — Filtros de exclusión (último recurso)**\nSolo si los pasos 1–3 no dieron resultados:\n• **Atributos vagos/subjetivos** (\"el mejor señuelo\", \"algo bueno\") → `NO_MATCH`\n• **Productos que no vendemos** (\"cañas\", \"reels\", \"líneas\") → `NO_MATCH`\n\n---\n\n## VALIDACIÓN FINAL\n\n1. Identificar títulos candidatos basado en los pasos anteriores\n2. Validar cada título contra `APPENDED_TITLE`\n3. Descartar los que no estén en la lista\n4. Devolver títulos válidos (uno por línea) o `NO_MATCH`\n\n---\n\n## EJEMPLOS\n\n• **QUERY**: \"¿Qué señuelos tienen para trucha?\"\n  **SALIDA ESPERADA**:\n  Caimán\n  TNT Extreme\n  Turbo\n\n• **QUERY**: \"El Caníbal\"\n  **SALIDA ESPERADA**:\n  Caníbal\n\n• **QUERY**: \"Necesito una caña\"\n  **SALIDA ESPERADA**:\n  NO_MATCH",
+          "temperature": 0.1
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1,
+      "position": [-704, 1216],
+      "id": "matcher-ng",
+      "name": "Matcher Productos",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "CONFIGURAR_CREDENCIAL",
+          "name": "Google Gemini API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "check-no-match",
+              "leftValue": "=={{ ( ($json.content?.parts?.[0]?.text ?? $json.text ?? '') || '' ).trim() }}",
+              "rightValue": "NO_MATCH",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [-240, 1216],
+      "id": "if-no-match-matcher",
+      "name": "If NO_MATCH Matcher"
+    },
+    {
+      "parameters": {
+        "jsCode": "// --- CODE NODE: Extractor de títulos del LLM ---\nconst llmItems = $input.all() || [];\nconst llmText = llmItems.flatMap(item => {\n  const parts = item.json?.content?.parts;\n  if (Array.isArray(parts)) {\n    return parts.map(p => p?.text?.trim() ?? '');\n  }\n  return [String(item.json?.text ?? '').trim()];\n}).join('\\n').trim();\n\nif (!llmText) {\n  return [{ json: { __NO_ID__: true, reason: 'empty_llm_response' } }];\n}\n\nconst cleanedText = llmText\n  .replace(/```(?:json)?/g, '')\n  .replace(/```/g, '')\n  .trim();\n\nconst candidates = cleanedText.split(/\\r?\\n/).filter(line => line.trim() !== '');\n\nconst outputItems = candidates.map(candidate => {\n  return {\n    json: {\n      id: candidate.trim()\n    }\n  };\n});\n\nif (outputItems.length > 0) {\n  return outputItems;\n} else {\n  return [{ json: { __NO_ID__: true, reason: 'no_valid_ids_found', raw_input: llmText } }];\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [64, 1360],
+      "id": "extract-titles-ng",
+      "name": "Extraer Títulos",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "amount": 2
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [272, 1360],
+      "id": "wait-ng",
+      "name": "Wait",
+      "webhookId": "ng-wait-001"
+    },
+    {
+      "parameters": {
+        "jsCode": "// --- CODE NODE: Busca producto por título ---\nconst itemABuscar = $input.first();\nconst tituloBuscado = itemABuscar.json.id;\n\nconst todosLosProductos = $('GET Productos NG').all();\n\nif (!tituloBuscado || !todosLosProductos || todosLosProductos.length === 0) {\n  return [{\n    json: {\n      error: \"No se proporcionó un título para buscar o la lista de productos está vacía.\",\n      tituloBuscado: tituloBuscado || \"No definido\"\n    }\n  }];\n}\n\nconst productoEncontrado = todosLosProductos.find(item => {\n  const tituloActual = item.json.name?.es;\n  return tituloActual === tituloBuscado;\n});\n\nif (productoEncontrado) {\n  return [productoEncontrado];\n} else {\n  return [{\n    json: {\n      match: \"NO_MATCH\",\n      error: `No se encontró ningún producto con el título exacto: \"${tituloBuscado}\"`\n    }\n  }];\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [496, 1360],
+      "id": "get-product-by-title",
+      "name": "Buscar Producto por Título"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "set-titulo",
+              "name": "Titulo",
+              "value": "={{ $json.name.es }}",
+              "type": "string"
+            },
+            {
+              "id": "set-descripcion",
+              "name": "Descripcion",
+              "value": "={{ $json.description.es }}",
+              "type": "string"
+            },
+            {
+              "id": "set-variantes",
+              "name": "Variantes",
+              "value": "={{ JSON.stringify(\n  ($json.variants || []).map(v => {\n    const levels = Array.isArray(v.inventory_levels) ? v.inventory_levels : [];\n    const qtyFromLevels = levels.reduce((sum, lvl) => sum + (Number(lvl?.stock) || 0), 0);\n    const stock = Number.isFinite(Number(v.stock)) ? Number(v.stock) : qtyFromLevels;\n\n    return {\n      title: (Array.isArray(v.values) && v.values.length) ? v.values.map(val => val.es).join(' / ') : ($json.name?.es || null),\n      sku: v.sku || null,\n      price: Number(v.promotional_price || v.price),\n      compare_at_price: v.compare_at_price ? Number(v.compare_at_price) : null,\n      stock,\n      weight_kg: v.weight ? Number(v.weight) : null\n    };\n  })\n) }}",
+              "type": "string"
+            },
+            {
+              "id": "set-url",
+              "name": "URL",
+              "value": "={{ $json.canonical_url }}",
+              "type": "string"
+            },
+            {
+              "id": "set-tags",
+              "name": "Tags",
+              "value": "={{ $json.tags }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [784, 1360],
+      "id": "format-product-ng",
+      "name": "Formatear Producto"
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [1008, 1360],
+      "id": "aggregate-products",
+      "name": "Aggregate Productos",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "jsCode": "// --- NODO CODE: Formato texto para Ranker ---\nfunction limpiarTexto(s = '') {\n  return String(s)\n    .replace(/<[^>]+>/g, ' ')\n    .replace(/&[a-z]+;/gi, ' ')\n    .replace(/\\s+/g, ' ')\n    .trim();\n}\n\nconst data = (items[0]?.json?.data) ?? [];\n\nconst productosComoTexto = data.map((item) => {\n  const titulo = item['Titulo'] ?? 'Sin título';\n  const descripcion = limpiarTexto(item['Descripcion'] ?? '');\n  const url = item['URL'] ?? '';\n  const tags = item['Tags'] ?? '';\n\n  let variantesStr = 'No disponibles';\n  try {\n    const variantesArray = typeof item['Variantes'] === 'string' \n      ? JSON.parse(item['Variantes']) \n      : (item['Variantes'] ?? []);\n\n    if (Array.isArray(variantesArray) && variantesArray.length > 0) {\n      variantesStr = variantesArray.map(v => \n        `• ${v.title || 'N/A'}: $${v.price || 'N/A'} (${v.stock || 0} en stock)`\n      ).join('\\n');\n    }\n  } catch (e) {}\n\n  return `\n---\nTitulo: ${titulo}\nDescripcion: ${descripcion}\nTags: ${tags}\nURL: ${url}\nVariantes:\n${variantesStr}\n---\n  `.trim();\n}).join('\\n\\n');\n\nreturn [{\n  json: {\n    productos_texto: productosComoTexto\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1232, 1360],
+      "id": "format-text-ranker",
+      "name": "Formato Texto Ranker"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-flash-preview-05-20",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-flash-preview-05-20"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=Pregunta del usuario: {{ $('Save Input Client').first().json.mensaje }}\nQuery: {{ $('Save Input Client').first().json.query }}\n\nProductos encontrados:\n{{ $json.productos_texto }}"
+            }
+          ]
+        },
+        "jsonOutput": true,
+        "options": {
+          "systemMessage": "# 1. ROL Y DIRECTIVA PRIMARIA\n\nActuás como un **Motor de Clasificación Estratégica** especializado en PESCA DEPORTIVA. Tu única función es procesar una consulta de usuario y un corpus de datos de productos para destilar una recomendación jerarquizada y accionable. **Tu resultado debe ser un objeto JSON estructurado o el string literal `NO_MATCH`.**\n\n# 2. CONTEXTO OPERACIONAL\n\nOperás dentro de un flujo de E-commerce para **NG Artificiales**, una empresa argentina especializada en:\n- Señuelos de pesca (artificiales para agua dulce)\n- Equipamiento outdoor (térmicos, cuchillos, linternas)\n\nEl usuario final es un **pescador deportivo** que busca soluciones a necesidades concretas.\n\n# 3. PROCESO COGNITIVO\n\n### Paso 1: Deconstrucción\nExtraé:\n• **Especie_Objetivo**: ¿Qué pez quiere pescar?\n• **Modalidad**: ¿Spinning, trolling, baitcasting?\n• **Tipo_de_Agua**: ¿Lago, río, laguna?\n• **Profundidad**: ¿Superficial, media, profunda?\n• **Information_Demands**: Datos solicitados\n\n### Paso 2: Clasificación\n\n**`principales`:** Respuesta directa. Cumple especie Y modalidad.\n**`sugeridos_alternativos`:** Resuelve la necesidad pero no es match exacto.\n**`complementarios`:** Se usa junto con el principal.\n\n### Paso 3: Auditoría\nSi alguna información solicitada no está, agregala a `datos_faltantes`.\n\n# 4. FORMATO DE SALIDA\n\n```json\n{\n  \"principales\": [\"--- Titulo: [X]\\nDescripcion: [Y]\\n...\"],\n  \"sugeridos_alternativos\": [],\n  \"complementarios\": [],\n  \"datos_faltantes\": []\n}\n```\n\nO si no hay coincidencias: `NO_MATCH`\n\n# 5. RESTRICCIONES\n\n• Solo JSON o `NO_MATCH`\n• Sin Markdown ni texto adicional\n• Todo debe provenir de los productos recibidos",
+          "temperature": 0.1
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1,
+      "position": [1456, 1360],
+      "id": "ranker-ng",
+      "name": "Ranker Productos",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "CONFIGURAR_CREDENCIAL",
+          "name": "Google Gemini API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parsea respuesta del Ranker\nfunction readLLM(it) {\n  const parts = it.json?.content?.parts;\n  if (Array.isArray(parts)) return parts.map(p => p?.text ?? '').join('\\n');\n  return String(it.json?.text ?? '');\n}\n\nconst raw = readLLM(items[0] || {});\n\nconst cleaned = String(raw)\n  .replace(/```(?:json)?/gi, '')\n  .replace(/```/g, '')\n  .trim();\n\nlet parsed = null;\ntry { parsed = JSON.parse(cleaned); } catch {}\n\nconst text = parsed === null\n  ? cleaned.replace(/^[\"'`]+|[\"'`]+$/g, '').trim()\n  : '';\n\nconst isNoMatch = (parsed === null) && (text === 'NO_MATCH');\n\nreturn [{\n  json: {\n    response_raw: raw,\n    response_text: text,\n    response_json: parsed,\n    response: parsed ?? text,\n    is_no_match: isNoMatch\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1808, 1360],
+      "id": "parse-ranker-response",
+      "name": "Parsear Respuesta Ranker"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "check-ranker-no-match",
+              "leftValue": "=={{ ($json.response_text || '').trim() }}",
+              "rightValue": "NO_MATCH",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [2240, 1360],
+      "id": "if-no-match-ranker",
+      "name": "If NO_MATCH Ranker"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parsea JSON de response\nif ($json.response && typeof $json.response === 'object') {\n  return [{ json: $json.response }];\n}\n\nif (typeof $json.response === 'string') {\n  try { return [{ json: JSON.parse($json.response) }]; }\n  catch { return [{ json: { raw: $json.response } }]; }\n}\n\nreturn [{ json: { error: 'response vacío', raw: $json.response } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2448, 1456],
+      "id": "parse-json-response",
+      "name": "Parsear JSON Response"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "set-principales",
+              "name": "principales",
+              "value": "={{ $json.principales }}",
+              "type": "array"
+            },
+            {
+              "id": "set-sugeridos",
+              "name": "sugeridos_alternativos",
+              "value": "={{ $json.sugeridos_alternativos }}",
+              "type": "array"
+            },
+            {
+              "id": "set-complementarios",
+              "name": "complementarios",
+              "value": "={{ $json.complementarios }}",
+              "type": "array"
+            },
+            {
+              "id": "set-faltantes",
+              "name": "datos_faltantes",
+              "value": "={{ $json.datos_faltantes }}",
+              "type": "array"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [2704, 1520],
+      "id": "extract-categories",
+      "name": "Extraer Categorías"
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [2960, 1520],
+      "id": "aggregate-final",
+      "name": "Aggregate Final"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "stringify-productos",
+              "name": "productos",
+              "value": "={{ JSON.stringify($('Aggregate Final').item.json, null, 2) }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [3248, 1520],
+      "id": "prepare-for-agent",
+      "name": "Preparar para Agent"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=# DATOS PARA ANÁLISIS\n\n## 1. INTENCIÓN DEL CLIENTE\nQuery: {{ $('Save Input Client').first().json.query }}\nMensaje: \"{{ $('Save Input Client').first().json.mensaje }}\"\n\n## 2. PRODUCTOS CANDIDATOS (JSON)\n{{ $('Preparar para Agent').item.json.productos }}\n\n## 3. MANUAL DE POLÍTICAS Y FAQs\n{{ $json.content }}\n",
+        "options": {
+          "systemMessage": "**ROL Y DIRECTIVA PRIMARIA**\n\nActuás como **NICO**, Asesor de Pesca experto y el rostro de **NG Artificiales**. Sos la etapa final de un sistema de IA: la **síntesis y comunicación humana**. Has recibido un dossier completo con la consulta del cliente, productos clasificados y un manual de políticas. Tu misión es transformar estos datos en una respuesta que sea precisa, empática, técnicamente sólida y que genere confianza.\n\n**TU PERSONALIDAD:**\n- Sos un pescador apasionado que conoce cada señuelo de la tienda\n- Usás lenguaje técnico de pesca pero accesible\n- Sos directo y práctico, sin vueltas\n- Transmitís entusiasmo genuino por la pesca\n- Hablás en argentino (vos, che, dale, etc.)\n\n---\n\n## PROCESO COGNITIVO\n\n### Paso 1: Deconstrucción de la Intención\nExtraé: Especie objetivo, Modalidad, Tipo de agua, Profundidad deseada\n\n### Paso 2: Filtro de Relevancia\nSi un señuelo está diseñado para una especie/modalidad que NO corresponde a lo que pidió el cliente, **DESCARTALO**.\n\n### Paso 3: Síntesis y Redacción\n\n**1. Apertura con Empatía y Conexión**\nEj: \"¡Buenas! Así que andás buscando algo para las truchas en el sur... te entiendo perfectamente.\"\n\n**2. Recomendación Principal**\n- El señuelo más adecuado\n- 2-3 beneficios clave\n- Info técnica: profundidad, modalidad, especies\n- Precio y stock\n\n**3. Alternativas** (si hay)\n\n**4. Info Técnica Adicional**\n\n**5. Manejo de datos_faltantes**\nSi hay info que no está, decilo proactivamente.\n\n**6. Valor Agregado**\n- Envío gratis\n- Garantía\n- Link a la tienda\n\n**7. Cierre Profesional**\n\"¿Querés que te cuente más sobre los colores? ¡Buena pesca!\n\n**NICO** - NG Artificiales\"\n\n---\n\n## REGLAS INQUEBRANTABLES\n\n• **FILTRADO ES MANDATORIO:** Relevancia por especie y modalidad.\n• **CERO ALUCINACIONES:** Si no está en los datos, no lo inventés.\n• **PERSONA CONSISTENTE:** Siempre sos NICO, pescador experto, argentino.\n• **NO RECOMIENDES PRODUCTOS QUE NO VENDEMOS:** Si piden cañas, reels, líneas → decí que solo vendemos señuelos y equipamiento outdoor."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.1,
+      "position": [3696, 1520],
+      "id": "agent-nico",
+      "name": "AI Agent NICO"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [3568, 1728],
+      "id": "gemini-for-nico",
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "CONFIGURAR_CREDENCIAL",
+          "name": "Google Gemini API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "output-mensaje",
+              "name": "mensaje",
+              "value": "={{ $json.output }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [4272, 1520],
+      "id": "output-final",
+      "name": "Output Final"
+    },
+    {
+      "parameters": {
+        "content": "# Herramienta Productos - NG Artificiales\n\nWorkflow para responder consultas de productos usando IA.\n\n**Credenciales necesarias:**\n- Google Gemini API\n- Google Docs API (opcional, para FAQs)\n- Google Sheets API (opcional, para logs)\n\n**Store ID:** 2590356\n**Tienda Nube API**",
+        "height": 320,
+        "width": 400
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [-1800, 900],
+      "id": "note-intro",
+      "name": "Info Workflow"
+    },
+    {
+      "parameters": {
+        "content": "**MATCHER**\nGemini 2.5 Pro\nBusca productos que coincidan con la query",
+        "height": 200,
+        "width": 250
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [-750, 1000],
+      "id": "note-matcher",
+      "name": "Nota Matcher"
+    },
+    {
+      "parameters": {
+        "content": "**RANKER**\nGemini 2.5 Flash\nClasifica productos en principales, alternativos, complementarios",
+        "height": 200,
+        "width": 250
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [1400, 1140],
+      "id": "note-ranker",
+      "name": "Nota Ranker"
+    },
+    {
+      "parameters": {
+        "content": "**AI AGENT NICO**\nGenera respuesta humanizada como asesor de pesca experto",
+        "height": 200,
+        "width": 250
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [3640, 1300],
+      "id": "note-nico",
+      "name": "Nota NICO"
+    }
+  ],
+  "connections": {
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "Save Input Client",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Save Input Client": {
+      "main": [
+        [
+          {
+            "node": "GET Productos NG",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GET Productos NG": {
+      "main": [
+        [
+          {
+            "node": "Preprocesar Catálogo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Preprocesar Catálogo": {
+      "main": [
+        [
+          {
+            "node": "Matcher Productos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Matcher Productos": {
+      "main": [
+        [
+          {
+            "node": "If NO_MATCH Matcher",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If NO_MATCH Matcher": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Extraer Títulos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extraer Títulos": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "Buscar Producto por Título",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Buscar Producto por Título": {
+      "main": [
+        [
+          {
+            "node": "Formatear Producto",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Formatear Producto": {
+      "main": [
+        [
+          {
+            "node": "Aggregate Productos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate Productos": {
+      "main": [
+        [
+          {
+            "node": "Formato Texto Ranker",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Formato Texto Ranker": {
+      "main": [
+        [
+          {
+            "node": "Ranker Productos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ranker Productos": {
+      "main": [
+        [
+          {
+            "node": "Parsear Respuesta Ranker",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parsear Respuesta Ranker": {
+      "main": [
+        [
+          {
+            "node": "If NO_MATCH Ranker",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If NO_MATCH Ranker": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Parsear JSON Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parsear JSON Response": {
+      "main": [
+        [
+          {
+            "node": "Extraer Categorías",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extraer Categorías": {
+      "main": [
+        [
+          {
+            "node": "Aggregate Final",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate Final": {
+      "main": [
+        [
+          {
+            "node": "Preparar para Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Preparar para Agent": {
+      "main": [
+        [
+          {
+            "node": "AI Agent NICO",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent NICO",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent NICO": {
+      "main": [
+        [
+          {
+            "node": "Output Final",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2026-01-13T00:00:00.000Z",
+  "versionId": "ng-artificiales-v1"
+}

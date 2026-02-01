@@ -1,0 +1,1861 @@
+{
+  "generated_at": "2026-01-09T22:44:01.647764",
+  "weekly_analysis": {
+    "weekly_data": [
+      {
+        "year_week": "2024-W27",
+        "sales": 40068.55,
+        "orders": 1.0,
+        "date": "2024-07-04 00:00:00",
+        "week_num": 1
+      },
+      {
+        "year_week": "2024-W28",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2024-07-08 00:00:00",
+        "week_num": 2
+      },
+      {
+        "year_week": "2024-W29",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2024-07-15 00:00:00",
+        "week_num": 3
+      },
+      {
+        "year_week": "2024-W30",
+        "sales": 68716.8,
+        "orders": 1.0,
+        "date": "2024-07-22 00:00:00",
+        "week_num": 4
+      },
+      {
+        "year_week": "2024-W31",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2024-07-29 00:00:00",
+        "week_num": 5
+      },
+      {
+        "year_week": "2024-W32",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2024-08-05 00:00:00",
+        "week_num": 6
+      },
+      {
+        "year_week": "2024-W33",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2024-08-12 00:00:00",
+        "week_num": 7
+      },
+      {
+        "year_week": "2024-W34",
+        "sales": 16720.96,
+        "orders": 1.0,
+        "date": "2024-08-19 00:00:00",
+        "week_num": 8
+      },
+      {
+        "year_week": "2024-W35",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2024-08-26 00:00:00",
+        "week_num": 9
+      },
+      {
+        "year_week": "2024-W36",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2024-09-02 00:00:00",
+        "week_num": 10
+      },
+      {
+        "year_week": "2024-W37",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2024-09-09 00:00:00",
+        "week_num": 11
+      },
+      {
+        "year_week": "2024-W38",
+        "sales": 29631.83,
+        "orders": 1.0,
+        "date": "2024-09-16 00:00:00",
+        "week_num": 12
+      },
+      {
+        "year_week": "2024-W39",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2024-09-23 00:00:00",
+        "week_num": 13
+      },
+      {
+        "year_week": "2024-W40",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2024-09-30 00:00:00",
+        "week_num": 14
+      },
+      {
+        "year_week": "2024-W41",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2024-10-07 00:00:00",
+        "week_num": 15
+      },
+      {
+        "year_week": "2024-W42",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2024-10-14 00:00:00",
+        "week_num": 16
+      },
+      {
+        "year_week": "2024-W43",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2024-10-21 00:00:00",
+        "week_num": 17
+      },
+      {
+        "year_week": "2024-W44",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2024-10-28 00:00:00",
+        "week_num": 18
+      },
+      {
+        "year_week": "2024-W45",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2024-11-04 00:00:00",
+        "week_num": 19
+      },
+      {
+        "year_week": "2024-W46",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2024-11-11 00:00:00",
+        "week_num": 20
+      },
+      {
+        "year_week": "2024-W47",
+        "sales": 39479.88,
+        "orders": 1.0,
+        "date": "2024-11-18 00:00:00",
+        "week_num": 21
+      },
+      {
+        "year_week": "2024-W48",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2024-11-25 00:00:00",
+        "week_num": 22
+      },
+      {
+        "year_week": "2024-W49",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2024-12-02 00:00:00",
+        "week_num": 23
+      },
+      {
+        "year_week": "2024-W50",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2024-12-09 00:00:00",
+        "week_num": 24
+      },
+      {
+        "year_week": "2024-W51",
+        "sales": 32496.61,
+        "orders": 1.0,
+        "date": "2024-12-16 00:00:00",
+        "week_num": 25
+      },
+      {
+        "year_week": "2024-W52",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2024-12-23 00:00:00",
+        "week_num": 26
+      },
+      {
+        "year_week": "2024-W53",
+        "sales": 98563.2,
+        "orders": 2.0,
+        "date": "2024-12-30 00:00:00",
+        "week_num": 27
+      },
+      {
+        "year_week": "2025-W00",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-01-01 00:00:00",
+        "week_num": 28
+      },
+      {
+        "year_week": "2025-W01",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-01-06 00:00:00",
+        "week_num": 29
+      },
+      {
+        "year_week": "2025-W02",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-01-13 00:00:00",
+        "week_num": 30
+      },
+      {
+        "year_week": "2025-W03",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-01-20 00:00:00",
+        "week_num": 31
+      },
+      {
+        "year_week": "2025-W04",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-01-27 00:00:00",
+        "week_num": 32
+      },
+      {
+        "year_week": "2025-W05",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-02-03 00:00:00",
+        "week_num": 33
+      },
+      {
+        "year_week": "2025-W06",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-02-10 00:00:00",
+        "week_num": 34
+      },
+      {
+        "year_week": "2025-W07",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-02-17 00:00:00",
+        "week_num": 35
+      },
+      {
+        "year_week": "2025-W08",
+        "sales": 46771.2,
+        "orders": 1.0,
+        "date": "2025-02-24 00:00:00",
+        "week_num": 36
+      },
+      {
+        "year_week": "2025-W09",
+        "sales": 513557.87000000005,
+        "orders": 3.0,
+        "date": "2025-03-03 00:00:00",
+        "week_num": 37
+      },
+      {
+        "year_week": "2025-W10",
+        "sales": 376123.95,
+        "orders": 5.0,
+        "date": "2025-03-10 00:00:00",
+        "week_num": 38
+      },
+      {
+        "year_week": "2025-W11",
+        "sales": 317319.57,
+        "orders": 5.0,
+        "date": "2025-03-17 00:00:00",
+        "week_num": 39
+      },
+      {
+        "year_week": "2025-W12",
+        "sales": 749043.89,
+        "orders": 9.0,
+        "date": "2025-03-24 00:00:00",
+        "week_num": 40
+      },
+      {
+        "year_week": "2025-W13",
+        "sales": 681189.09,
+        "orders": 8.0,
+        "date": "2025-03-31 00:00:00",
+        "week_num": 41
+      },
+      {
+        "year_week": "2025-W14",
+        "sales": 460665.58999999997,
+        "orders": 5.0,
+        "date": "2025-04-07 00:00:00",
+        "week_num": 42
+      },
+      {
+        "year_week": "2025-W15",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-04-14 00:00:00",
+        "week_num": 43
+      },
+      {
+        "year_week": "2025-W16",
+        "sales": 21644.83,
+        "orders": 1.0,
+        "date": "2025-04-21 00:00:00",
+        "week_num": 44
+      },
+      {
+        "year_week": "2025-W17",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-04-28 00:00:00",
+        "week_num": 45
+      },
+      {
+        "year_week": "2025-W18",
+        "sales": 41948.15,
+        "orders": 1.0,
+        "date": "2025-05-05 00:00:00",
+        "week_num": 46
+      },
+      {
+        "year_week": "2025-W19",
+        "sales": 110978.7,
+        "orders": 1.0,
+        "date": "2025-05-12 00:00:00",
+        "week_num": 47
+      },
+      {
+        "year_week": "2025-W20",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-05-19 00:00:00",
+        "week_num": 48
+      },
+      {
+        "year_week": "2025-W21",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-05-26 00:00:00",
+        "week_num": 49
+      },
+      {
+        "year_week": "2025-W22",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-06-02 00:00:00",
+        "week_num": 50
+      },
+      {
+        "year_week": "2025-W23",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-06-09 00:00:00",
+        "week_num": 51
+      },
+      {
+        "year_week": "2025-W24",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-06-16 00:00:00",
+        "week_num": 52
+      },
+      {
+        "year_week": "2025-W25",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-06-23 00:00:00",
+        "week_num": 53
+      },
+      {
+        "year_week": "2025-W26",
+        "sales": 45441.75,
+        "orders": 1.0,
+        "date": "2025-06-30 00:00:00",
+        "week_num": 54
+      },
+      {
+        "year_week": "2025-W27",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-07-07 00:00:00",
+        "week_num": 55
+      },
+      {
+        "year_week": "2025-W28",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-07-14 00:00:00",
+        "week_num": 56
+      },
+      {
+        "year_week": "2025-W29",
+        "sales": 154517.36,
+        "orders": 1.0,
+        "date": "2025-07-21 00:00:00",
+        "week_num": 57
+      },
+      {
+        "year_week": "2025-W30",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-07-28 00:00:00",
+        "week_num": 58
+      },
+      {
+        "year_week": "2025-W31",
+        "sales": 152073.16,
+        "orders": 2.0,
+        "date": "2025-08-04 00:00:00",
+        "week_num": 59
+      },
+      {
+        "year_week": "2025-W32",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-08-11 00:00:00",
+        "week_num": 60
+      },
+      {
+        "year_week": "2025-W33",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-08-18 00:00:00",
+        "week_num": 61
+      },
+      {
+        "year_week": "2025-W34",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-08-25 00:00:00",
+        "week_num": 62
+      },
+      {
+        "year_week": "2025-W35",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-09-01 00:00:00",
+        "week_num": 63
+      },
+      {
+        "year_week": "2025-W36",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-09-08 00:00:00",
+        "week_num": 64
+      },
+      {
+        "year_week": "2025-W37",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-09-15 00:00:00",
+        "week_num": 65
+      },
+      {
+        "year_week": "2025-W38",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-09-22 00:00:00",
+        "week_num": 66
+      },
+      {
+        "year_week": "2025-W39",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-09-29 00:00:00",
+        "week_num": 67
+      },
+      {
+        "year_week": "2025-W40",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-10-06 00:00:00",
+        "week_num": 68
+      },
+      {
+        "year_week": "2025-W41",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-10-13 00:00:00",
+        "week_num": 69
+      },
+      {
+        "year_week": "2025-W42",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-10-20 00:00:00",
+        "week_num": 70
+      },
+      {
+        "year_week": "2025-W43",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-10-27 00:00:00",
+        "week_num": 71
+      },
+      {
+        "year_week": "2025-W44",
+        "sales": 305074.0,
+        "orders": 2.0,
+        "date": "2025-11-03 00:00:00",
+        "week_num": 72
+      },
+      {
+        "year_week": "2025-W45",
+        "sales": 141695.0,
+        "orders": 2.0,
+        "date": "2025-11-10 00:00:00",
+        "week_num": 73
+      },
+      {
+        "year_week": "2025-W46",
+        "sales": 123753.0,
+        "orders": 2.0,
+        "date": "2025-11-17 00:00:00",
+        "week_num": 74
+      },
+      {
+        "year_week": "2025-W47",
+        "sales": 211925.0,
+        "orders": 1.0,
+        "date": "2025-11-24 00:00:00",
+        "week_num": 75
+      },
+      {
+        "year_week": "2025-W48",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-12-01 00:00:00",
+        "week_num": 76
+      },
+      {
+        "year_week": "2025-W49",
+        "sales": 0.0,
+        "orders": 0.0,
+        "date": "2025-12-08 00:00:00",
+        "week_num": 77
+      },
+      {
+        "year_week": "2025-W50",
+        "sales": 44695.0,
+        "orders": 1.0,
+        "date": "2025-12-15 00:00:00",
+        "week_num": 78
+      }
+    ],
+    "stats": {
+      "total_weeks": 78,
+      "avg_weekly_sales": 61847.371025641034,
+      "std_weekly_sales": 148840.92044909453,
+      "cv": 240.65844348887074,
+      "min": 0.0,
+      "max": 749043.89,
+      "median": 0.0,
+      "weeks_with_sales": 25
+    }
+  },
+  "cycles": {
+    "autocorrelation": [
+      {
+        "lag": 1,
+        "correlation": 0.7084280511212756
+      },
+      {
+        "lag": 2,
+        "correlation": 0.49822678179478935
+      },
+      {
+        "lag": 3,
+        "correlation": 0.3648072497694012
+      },
+      {
+        "lag": 4,
+        "correlation": 0.1922130349995544
+      },
+      {
+        "lag": 5,
+        "correlation": 0.05074856122484847
+      },
+      {
+        "lag": 6,
+        "correlation": -0.08132769968518536
+      },
+      {
+        "lag": 7,
+        "correlation": -0.09916706233294557
+      },
+      {
+        "lag": 8,
+        "correlation": -0.13984932258100283
+      },
+      {
+        "lag": 9,
+        "correlation": -0.13571903725934184
+      },
+      {
+        "lag": 10,
+        "correlation": -0.10085461452745573
+      },
+      {
+        "lag": 11,
+        "correlation": -0.15701163062196957
+      },
+      {
+        "lag": 12,
+        "correlation": -0.13699109464876194
+      },
+      {
+        "lag": 13,
+        "correlation": -0.07920143693987736
+      },
+      {
+        "lag": 14,
+        "correlation": -0.11297050013221095
+      },
+      {
+        "lag": 15,
+        "correlation": -0.04762622817104757
+      },
+      {
+        "lag": 16,
+        "correlation": -0.05894649979624082
+      },
+      {
+        "lag": 17,
+        "correlation": -0.029361516828839057
+      },
+      {
+        "lag": 18,
+        "correlation": -0.07054972072165251
+      },
+      {
+        "lag": 19,
+        "correlation": -0.06894634278431473
+      },
+      {
+        "lag": 20,
+        "correlation": -0.1041094388736786
+      }
+    ],
+    "significant_cycles": [
+      {
+        "lag": 1,
+        "correlation": 0.7084280511212756
+      },
+      {
+        "lag": 2,
+        "correlation": 0.49822678179478935
+      },
+      {
+        "lag": 3,
+        "correlation": 0.3648072497694012
+      }
+    ],
+    "trend_slope": 716.4049105325053,
+    "trend_direction": "growing",
+    "monthly_pattern": {
+      "1": 0.0,
+      "2": 11692.8,
+      "3": 527446.8740000001,
+      "4": 120577.605,
+      "5": 38231.712499999994,
+      "6": 9088.35,
+      "7": 29255.856666666663,
+      "8": 21099.265,
+      "9": 2963.183,
+      "10": 0.0,
+      "11": 102740.86,
+      "12": 21969.35125
+    },
+    "peaks_count": 7,
+    "valleys_count": 0
+  },
+  "forecasting": {
+    "historical": [
+      {
+        "date": "2024-07-04",
+        "year_week": "2024-W27",
+        "sales": 40068.55,
+        "orders": 1,
+        "sma_4": null
+      },
+      {
+        "date": "2024-07-08",
+        "year_week": "2024-W28",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": null
+      },
+      {
+        "date": "2024-07-15",
+        "year_week": "2024-W29",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": null
+      },
+      {
+        "date": "2024-07-22",
+        "year_week": "2024-W30",
+        "sales": 68716.8,
+        "orders": 1,
+        "sma_4": 27196.3375
+      },
+      {
+        "date": "2024-07-29",
+        "year_week": "2024-W31",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 17179.2
+      },
+      {
+        "date": "2024-08-05",
+        "year_week": "2024-W32",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 17179.2
+      },
+      {
+        "date": "2024-08-12",
+        "year_week": "2024-W33",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 17179.2
+      },
+      {
+        "date": "2024-08-19",
+        "year_week": "2024-W34",
+        "sales": 16720.96,
+        "orders": 1,
+        "sma_4": 4180.24
+      },
+      {
+        "date": "2024-08-26",
+        "year_week": "2024-W35",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 4180.24
+      },
+      {
+        "date": "2024-09-02",
+        "year_week": "2024-W36",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 4180.24
+      },
+      {
+        "date": "2024-09-09",
+        "year_week": "2024-W37",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 4180.24
+      },
+      {
+        "date": "2024-09-16",
+        "year_week": "2024-W38",
+        "sales": 29631.83,
+        "orders": 1,
+        "sma_4": 7407.9575
+      },
+      {
+        "date": "2024-09-23",
+        "year_week": "2024-W39",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 7407.9575
+      },
+      {
+        "date": "2024-09-30",
+        "year_week": "2024-W40",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 7407.9575
+      },
+      {
+        "date": "2024-10-07",
+        "year_week": "2024-W41",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 7407.9575
+      },
+      {
+        "date": "2024-10-14",
+        "year_week": "2024-W42",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2024-10-21",
+        "year_week": "2024-W43",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2024-10-28",
+        "year_week": "2024-W44",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2024-11-04",
+        "year_week": "2024-W45",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2024-11-11",
+        "year_week": "2024-W46",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2024-11-18",
+        "year_week": "2024-W47",
+        "sales": 39479.88,
+        "orders": 1,
+        "sma_4": 9869.97
+      },
+      {
+        "date": "2024-11-25",
+        "year_week": "2024-W48",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 9869.97
+      },
+      {
+        "date": "2024-12-02",
+        "year_week": "2024-W49",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 9869.97
+      },
+      {
+        "date": "2024-12-09",
+        "year_week": "2024-W50",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 9869.97
+      },
+      {
+        "date": "2024-12-16",
+        "year_week": "2024-W51",
+        "sales": 32496.61,
+        "orders": 1,
+        "sma_4": 8124.1525
+      },
+      {
+        "date": "2024-12-23",
+        "year_week": "2024-W52",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 8124.1525
+      },
+      {
+        "date": "2024-12-30",
+        "year_week": "2024-W53",
+        "sales": 98563.2,
+        "orders": 2,
+        "sma_4": 32764.9525
+      },
+      {
+        "date": "2025-01-01",
+        "year_week": "2025-W00",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 32764.9525
+      },
+      {
+        "date": "2025-01-06",
+        "year_week": "2025-W01",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 24640.8
+      },
+      {
+        "date": "2025-01-13",
+        "year_week": "2025-W02",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 24640.8
+      },
+      {
+        "date": "2025-01-20",
+        "year_week": "2025-W03",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2025-01-27",
+        "year_week": "2025-W04",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2025-02-03",
+        "year_week": "2025-W05",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2025-02-10",
+        "year_week": "2025-W06",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2025-02-17",
+        "year_week": "2025-W07",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2025-02-24",
+        "year_week": "2025-W08",
+        "sales": 46771.2,
+        "orders": 1,
+        "sma_4": 11692.8
+      },
+      {
+        "date": "2025-03-03",
+        "year_week": "2025-W09",
+        "sales": 513557.87000000005,
+        "orders": 3,
+        "sma_4": 140082.26750000002
+      },
+      {
+        "date": "2025-03-10",
+        "year_week": "2025-W10",
+        "sales": 376123.95,
+        "orders": 5,
+        "sma_4": 234113.255
+      },
+      {
+        "date": "2025-03-17",
+        "year_week": "2025-W11",
+        "sales": 317319.57,
+        "orders": 5,
+        "sma_4": 313443.1475
+      },
+      {
+        "date": "2025-03-24",
+        "year_week": "2025-W12",
+        "sales": 749043.89,
+        "orders": 9,
+        "sma_4": 489011.32000000007
+      },
+      {
+        "date": "2025-03-31",
+        "year_week": "2025-W13",
+        "sales": 681189.09,
+        "orders": 8,
+        "sma_4": 530919.125
+      },
+      {
+        "date": "2025-04-07",
+        "year_week": "2025-W14",
+        "sales": 460665.58999999997,
+        "orders": 5,
+        "sma_4": 552054.5349999999
+      },
+      {
+        "date": "2025-04-14",
+        "year_week": "2025-W15",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 472724.64249999996
+      },
+      {
+        "date": "2025-04-21",
+        "year_week": "2025-W16",
+        "sales": 21644.83,
+        "orders": 1,
+        "sma_4": 290874.8775
+      },
+      {
+        "date": "2025-04-28",
+        "year_week": "2025-W17",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 120577.605
+      },
+      {
+        "date": "2025-05-05",
+        "year_week": "2025-W18",
+        "sales": 41948.15,
+        "orders": 1,
+        "sma_4": 15898.245
+      },
+      {
+        "date": "2025-05-12",
+        "year_week": "2025-W19",
+        "sales": 110978.7,
+        "orders": 1,
+        "sma_4": 43642.92
+      },
+      {
+        "date": "2025-05-19",
+        "year_week": "2025-W20",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 38231.7125
+      },
+      {
+        "date": "2025-05-26",
+        "year_week": "2025-W21",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 38231.7125
+      },
+      {
+        "date": "2025-06-02",
+        "year_week": "2025-W22",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 27744.675
+      },
+      {
+        "date": "2025-06-09",
+        "year_week": "2025-W23",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2025-06-16",
+        "year_week": "2025-W24",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2025-06-23",
+        "year_week": "2025-W25",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2025-06-30",
+        "year_week": "2025-W26",
+        "sales": 45441.75,
+        "orders": 1,
+        "sma_4": 11360.4375
+      },
+      {
+        "date": "2025-07-07",
+        "year_week": "2025-W27",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 11360.4375
+      },
+      {
+        "date": "2025-07-14",
+        "year_week": "2025-W28",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 11360.4375
+      },
+      {
+        "date": "2025-07-21",
+        "year_week": "2025-W29",
+        "sales": 154517.36,
+        "orders": 1,
+        "sma_4": 49989.7775
+      },
+      {
+        "date": "2025-07-28",
+        "year_week": "2025-W30",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 38629.34
+      },
+      {
+        "date": "2025-08-04",
+        "year_week": "2025-W31",
+        "sales": 152073.16,
+        "orders": 2,
+        "sma_4": 76647.63
+      },
+      {
+        "date": "2025-08-11",
+        "year_week": "2025-W32",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 76647.63
+      },
+      {
+        "date": "2025-08-18",
+        "year_week": "2025-W33",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 38018.29
+      },
+      {
+        "date": "2025-08-25",
+        "year_week": "2025-W34",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 38018.29
+      },
+      {
+        "date": "2025-09-01",
+        "year_week": "2025-W35",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2025-09-08",
+        "year_week": "2025-W36",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2025-09-15",
+        "year_week": "2025-W37",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2025-09-22",
+        "year_week": "2025-W38",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2025-09-29",
+        "year_week": "2025-W39",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2025-10-06",
+        "year_week": "2025-W40",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2025-10-13",
+        "year_week": "2025-W41",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2025-10-20",
+        "year_week": "2025-W42",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2025-10-27",
+        "year_week": "2025-W43",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 0.0
+      },
+      {
+        "date": "2025-11-03",
+        "year_week": "2025-W44",
+        "sales": 305074.0,
+        "orders": 2,
+        "sma_4": 76268.5
+      },
+      {
+        "date": "2025-11-10",
+        "year_week": "2025-W45",
+        "sales": 141695.0,
+        "orders": 2,
+        "sma_4": 111692.25
+      },
+      {
+        "date": "2025-11-17",
+        "year_week": "2025-W46",
+        "sales": 123753.0,
+        "orders": 2,
+        "sma_4": 142630.5
+      },
+      {
+        "date": "2025-11-24",
+        "year_week": "2025-W47",
+        "sales": 211925.0,
+        "orders": 1,
+        "sma_4": 195611.75
+      },
+      {
+        "date": "2025-12-01",
+        "year_week": "2025-W48",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 119343.25
+      },
+      {
+        "date": "2025-12-08",
+        "year_week": "2025-W49",
+        "sales": 0.0,
+        "orders": 0,
+        "sma_4": 83919.5
+      },
+      {
+        "date": "2025-12-15",
+        "year_week": "2025-W50",
+        "sales": 44695.0,
+        "orders": 1,
+        "sma_4": 64155.0
+      }
+    ],
+    "forecasts": [
+      {
+        "week": 1,
+        "date": "2025-12-22",
+        "forecast": 68318.73336980244,
+        "lower_bound": 0.0,
+        "upper_bound": 291580.1140434443,
+        "regression": 90145.36499167496,
+        "ema": 62123.88633324239,
+        "holt_winters": 45411.4049105325
+      },
+      {
+        "week": 2,
+        "date": "2025-12-29",
+        "forecast": 68820.21680717522,
+        "lower_bound": 0.0,
+        "upper_bound": 292081.597480817,
+        "regression": 90861.76990220748,
+        "ema": 62123.88633324239,
+        "holt_winters": 46127.80982106501
+      },
+      {
+        "week": 3,
+        "date": "2026-01-05",
+        "forecast": 69321.70024454796,
+        "lower_bound": 0.0,
+        "upper_bound": 292583.0809181898,
+        "regression": 91578.17481273998,
+        "ema": 62123.88633324239,
+        "holt_winters": 46844.214731597516
+      },
+      {
+        "week": 4,
+        "date": "2026-01-12",
+        "forecast": 69823.18368192072,
+        "lower_bound": 0.0,
+        "upper_bound": 293084.56435556256,
+        "regression": 92294.57972327247,
+        "ema": 62123.88633324239,
+        "holt_winters": 47560.61964213002
+      },
+      {
+        "week": 5,
+        "date": "2026-01-19",
+        "forecast": 70324.66711929347,
+        "lower_bound": 0.0,
+        "upper_bound": 293586.0477929353,
+        "regression": 93010.984633805,
+        "ema": 62123.88633324239,
+        "holt_winters": 48277.02455266253
+      },
+      {
+        "week": 6,
+        "date": "2026-01-26",
+        "forecast": 70826.15055666622,
+        "lower_bound": 0.0,
+        "upper_bound": 294087.531230308,
+        "regression": 93727.3895443375,
+        "ema": 62123.88633324239,
+        "holt_winters": 48993.42946319503
+      },
+      {
+        "week": 7,
+        "date": "2026-02-02",
+        "forecast": 71327.63399403897,
+        "lower_bound": 0.0,
+        "upper_bound": 294589.0146676808,
+        "regression": 94443.79445486999,
+        "ema": 62123.88633324239,
+        "holt_winters": 49709.834373727535
+      },
+      {
+        "week": 8,
+        "date": "2026-02-09",
+        "forecast": 71829.11743141174,
+        "lower_bound": 0.0,
+        "upper_bound": 295090.49810505356,
+        "regression": 95160.19936540251,
+        "ema": 62123.88633324239,
+        "holt_winters": 50426.23928426004
+      },
+      {
+        "week": 9,
+        "date": "2026-02-16",
+        "forecast": 72330.60086878447,
+        "lower_bound": 0.0,
+        "upper_bound": 295591.9815424263,
+        "regression": 95876.60427593501,
+        "ema": 62123.88633324239,
+        "holt_winters": 51142.64419479255
+      },
+      {
+        "week": 10,
+        "date": "2026-02-23",
+        "forecast": 72832.08430615724,
+        "lower_bound": 0.0,
+        "upper_bound": 296093.46497979906,
+        "regression": 96593.0091864675,
+        "ema": 62123.88633324239,
+        "holt_winters": 51859.04910532505
+      },
+      {
+        "week": 11,
+        "date": "2026-03-02",
+        "forecast": 73333.56774352999,
+        "lower_bound": 0.0,
+        "upper_bound": 296594.9484171718,
+        "regression": 97309.41409700003,
+        "ema": 62123.88633324239,
+        "holt_winters": 52575.454015857555
+      },
+      {
+        "week": 12,
+        "date": "2026-03-09",
+        "forecast": 73835.05118090275,
+        "lower_bound": 0.0,
+        "upper_bound": 297096.43185454456,
+        "regression": 98025.81900753253,
+        "ema": 62123.88633324239,
+        "holt_winters": 53291.858926390065
+      }
+    ],
+    "summary": {
+      "total_12w": 852922.7073042312,
+      "avg_weekly": 71076.8922753526,
+      "method": "Combined (Regression + EMA + Holt-Winters)"
+    }
+  },
+  "pareto": {
+    "products": [
+      {
+        "id": 251210703,
+        "name": "Combo Baitcast",
+        "quantity": 16,
+        "revenue": 1513484.0,
+        "orders_count": 16,
+        "avg_price": 94592.75,
+        "estimated_cost": 908090.4,
+        "estimated_margin": 605393.6,
+        "margin_pct": 40.0,
+        "revenue_pct": 27.98470633960609,
+        "cumulative_pct": 27.98470633960609,
+        "rank": 1
+      },
+      {
+        "id": 152958059,
+        "name": "Mojarra (120 mm, P/Q, 14)",
+        "quantity": 48,
+        "revenue": 720392.0,
+        "orders_count": 38,
+        "avg_price": 15008.166666666666,
+        "estimated_cost": 432235.2,
+        "estimated_margin": 288156.8,
+        "margin_pct": 40.0,
+        "revenue_pct": 13.320232370742943,
+        "cumulative_pct": 41.304938710349035,
+        "rank": 2
+      },
+      {
+        "id": 251213818,
+        "name": "Combo Spinning",
+        "quantity": 8,
+        "revenue": 505136.0,
+        "orders_count": 8,
+        "avg_price": 63142.0,
+        "estimated_cost": 303081.6,
+        "estimated_margin": 202054.40000000002,
+        "margin_pct": 40.0,
+        "revenue_pct": 9.340093863934646,
+        "cumulative_pct": 50.645032574283675,
+        "rank": 3
+      },
+      {
+        "id": 201905084,
+        "name": "Extreme (140 mm, P/BR, 11)",
+        "quantity": 28,
+        "revenue": 415812.0,
+        "orders_count": 26,
+        "avg_price": 14850.42857142857,
+        "estimated_cost": 249487.19999999998,
+        "estimated_margin": 166324.80000000002,
+        "margin_pct": 40.0,
+        "revenue_pct": 7.688470253061339,
+        "cumulative_pct": 58.333502827345015,
+        "rank": 4
+      },
+      {
+        "id": 251212672,
+        "name": "Combo Trolling",
+        "quantity": 4,
+        "revenue": 344192.0,
+        "orders_count": 4,
+        "avg_price": 86048.0,
+        "estimated_cost": 206515.19999999998,
+        "estimated_margin": 137676.80000000002,
+        "margin_pct": 40.0,
+        "revenue_pct": 6.364198131226825,
+        "cumulative_pct": 64.69770095857184,
+        "rank": 5
+      },
+      {
+        "id": 268340601,
+        "name": "Mojarra 120 - Paleta Quebrada - Baitcasting (120 mm, 03)",
+        "quantity": 18,
+        "revenue": 335672.0,
+        "orders_count": 17,
+        "avg_price": 18648.444444444445,
+        "estimated_cost": 201403.19999999998,
+        "estimated_margin": 134268.80000000002,
+        "margin_pct": 40.0,
+        "revenue_pct": 6.206661151639698,
+        "cumulative_pct": 70.90436211021154,
+        "rank": 6
+      },
+      {
+        "id": 268351818,
+        "name": "Mojarra 90 (90 mm, Paleta Quebrada, 11)",
+        "quantity": 14,
+        "revenue": 236600.0,
+        "orders_count": 14,
+        "avg_price": 16900.0,
+        "estimated_cost": 141960.0,
+        "estimated_margin": 94640.0,
+        "margin_pct": 40.0,
+        "revenue_pct": 4.374794527032199,
+        "cumulative_pct": 75.27915663724374,
+        "rank": 7
+      },
+      {
+        "id": 201848454,
+        "name": "Tabano (60 mm, P/C, 16)",
+        "quantity": 16,
+        "revenue": 227811.0,
+        "orders_count": 15,
+        "avg_price": 14238.1875,
+        "estimated_cost": 136686.6,
+        "estimated_margin": 91124.4,
+        "margin_pct": 40.0,
+        "revenue_pct": 4.212283668629469,
+        "cumulative_pct": 79.49144030587321,
+        "rank": 8
+      },
+      {
+        "id": 201937985,
+        "name": "Canibal (P/L, 16)",
+        "quantity": 18,
+        "revenue": 216184.0,
+        "orders_count": 18,
+        "avg_price": 12010.222222222223,
+        "estimated_cost": 129710.4,
+        "estimated_margin": 86473.6,
+        "margin_pct": 40.0,
+        "revenue_pct": 3.9972974642093364,
+        "cumulative_pct": 83.48873777008254,
+        "rank": 9
+      },
+      {
+        "id": 202430926,
+        "name": "Termo Explorer 1 lt (Negro)",
+        "quantity": 3,
+        "revenue": 171990.0,
+        "orders_count": 3,
+        "avg_price": 57330.0,
+        "estimated_cost": 103194.0,
+        "estimated_margin": 68796.0,
+        "margin_pct": 40.0,
+        "revenue_pct": 3.180139098496483,
+        "cumulative_pct": 86.66887686857902,
+        "rank": 10
+      },
+      {
+        "id": 202430910,
+        "name": "Cuchillo Premium Bowie",
+        "quantity": 3,
+        "revenue": 99900.0,
+        "orders_count": 3,
+        "avg_price": 33300.0,
+        "estimated_cost": 59940.0,
+        "estimated_margin": 39960.0,
+        "margin_pct": 40.0,
+        "revenue_pct": 1.8471765564265288,
+        "cumulative_pct": 88.51605342500555,
+        "rank": 11
+      },
+      {
+        "id": 202430932,
+        "name": "Vaso Térmico Clásico 750 ml (Verde)",
+        "quantity": 2,
+        "revenue": 87400.0,
+        "orders_count": 2,
+        "avg_price": 43700.0,
+        "estimated_cost": 52440.0,
+        "estimated_margin": 34960.0,
+        "margin_pct": 40.0,
+        "revenue_pct": 1.6160483586754617,
+        "cumulative_pct": 90.13210178368102,
+        "rank": 12
+      },
+      {
+        "id": 269214367,
+        "name": "TNT 140 (140 mm, 03)",
+        "quantity": 4,
+        "revenue": 74800.0,
+        "orders_count": 3,
+        "avg_price": 18700.0,
+        "estimated_cost": 44880.0,
+        "estimated_margin": 29920.0,
+        "margin_pct": 40.0,
+        "revenue_pct": 1.383071135342386,
+        "cumulative_pct": 91.5151729190234,
+        "rank": 13
+      },
+      {
+        "id": 201941960,
+        "name": "TNT (110 mm, 26)",
+        "quantity": 4,
+        "revenue": 72877.0,
+        "orders_count": 4,
+        "avg_price": 18219.25,
+        "estimated_cost": 43726.2,
+        "estimated_margin": 29150.800000000003,
+        "margin_pct": 40.0,
+        "revenue_pct": 1.3475143734003616,
+        "cumulative_pct": 92.86268729242376,
+        "rank": 14
+      },
+      {
+        "id": 202430907,
+        "name": "Cuchillo de Pesca Skinning",
+        "quantity": 2,
+        "revenue": 49368.0,
+        "orders_count": 2,
+        "avg_price": 24684.0,
+        "estimated_cost": 29620.8,
+        "estimated_margin": 19747.2,
+        "margin_pct": 40.0,
+        "revenue_pct": 0.9128269493259746,
+        "cumulative_pct": 93.77551424174973,
+        "rank": 15
+      },
+      {
+        "id": 202044227,
+        "name": "Turbo (17)",
+        "quantity": 3,
+        "revenue": 48205.0,
+        "orders_count": 3,
+        "avg_price": 16068.333333333334,
+        "estimated_cost": 28923.0,
+        "estimated_margin": 19282.0,
+        "margin_pct": 40.0,
+        "revenue_pct": 0.8913227818072155,
+        "cumulative_pct": 94.66683702355697,
+        "rank": 16
+      },
+      {
+        "id": 202430887,
+        "name": "Linterna Eco Recargable",
+        "quantity": 1,
+        "revenue": 41460.0,
+        "orders_count": 1,
+        "avg_price": 41460.0,
+        "estimated_cost": 24876.0,
+        "estimated_margin": 16584.0,
+        "margin_pct": 40.0,
+        "revenue_pct": 0.7666060063007396,
+        "cumulative_pct": 95.4334430298577,
+        "rank": 17
+      },
+      {
+        "id": 202430881,
+        "name": "Linterna Scubaglow",
+        "quantity": 2,
+        "revenue": 39400.0,
+        "orders_count": 2,
+        "avg_price": 19700.0,
+        "estimated_cost": 23640.0,
+        "estimated_margin": 15760.0,
+        "margin_pct": 40.0,
+        "revenue_pct": 0.7285160793113638,
+        "cumulative_pct": 96.16195910916906,
+        "rank": 18
+      },
+      {
+        "id": 268936103,
+        "name": "Cascarudo - Paleta Corta - Trolling/Baitcasting (11)",
+        "quantity": 2,
+        "revenue": 38502.0,
+        "orders_count": 2,
+        "avg_price": 19251.0,
+        "estimated_cost": 23101.2,
+        "estimated_margin": 15400.8,
+        "margin_pct": 40.0,
+        "revenue_pct": 0.711911829584927,
+        "cumulative_pct": 96.87387093875398,
+        "rank": 19
+      },
+      {
+        "id": 268940379,
+        "name": "Cascarudo - Paleta Quebrada - Baitcasting (06)",
+        "quantity": 2,
+        "revenue": 38502.0,
+        "orders_count": 2,
+        "avg_price": 19251.0,
+        "estimated_cost": 23101.2,
+        "estimated_margin": 15400.8,
+        "margin_pct": 40.0,
+        "revenue_pct": 0.711911829584927,
+        "cumulative_pct": 97.58578276833892,
+        "rank": 20
+      },
+      {
+        "id": 269119214,
+        "name": "Tabano 60 (60 mm, Paleta Larga, 10)",
+        "quantity": 2,
+        "revenue": 33400.0,
+        "orders_count": 2,
+        "avg_price": 16700.0,
+        "estimated_cost": 20040.0,
+        "estimated_margin": 13360.0,
+        "margin_pct": 40.0,
+        "revenue_pct": 0.6175745443908515,
+        "cumulative_pct": 98.20335731272976,
+        "rank": 21
+      },
+      {
+        "id": 269130475,
+        "name": "Tabano 50 (50 mm, Paleta Corta, 03)",
+        "quantity": 2,
+        "revenue": 31800.0,
+        "orders_count": 2,
+        "avg_price": 15900.0,
+        "estimated_cost": 19080.0,
+        "estimated_margin": 12720.0,
+        "margin_pct": 40.0,
+        "revenue_pct": 0.5879901350787148,
+        "cumulative_pct": 98.79134744780848,
+        "rank": 22
+      },
+      {
+        "id": 202430903,
+        "name": "Cuchillo Táctico Raptor",
+        "quantity": 1,
+        "revenue": 29477.0,
+        "orders_count": 1,
+        "avg_price": 29477.0,
+        "estimated_cost": 17686.2,
+        "estimated_margin": 11790.8,
+        "margin_pct": 40.0,
+        "revenue_pct": 0.5450372708086565,
+        "cumulative_pct": 99.33638471861713,
+        "rank": 23
+      },
+      {
+        "id": 269138522,
+        "name": "Extreme 140 (140 mm, Paleta Larga, 11)",
+        "quantity": 1,
+        "revenue": 18990.0,
+        "orders_count": 1,
+        "avg_price": 18990.0,
+        "estimated_cost": 11394.0,
+        "estimated_margin": 7596.0,
+        "margin_pct": 40.0,
+        "revenue_pct": 0.35112995802342123,
+        "cumulative_pct": 99.68751467664056,
+        "rank": 24
+      },
+      {
+        "id": 269153774,
+        "name": "Extreme 110 (110 mm, Paleta BR, 15)",
+        "quantity": 1,
+        "revenue": 16900.0,
+        "orders_count": 1,
+        "avg_price": 16900.0,
+        "estimated_cost": 10140.0,
+        "estimated_margin": 6760.0,
+        "margin_pct": 40.0,
+        "revenue_pct": 0.3124853233594428,
+        "cumulative_pct": 100.0,
+        "rank": 25
+      }
+    ],
+    "pareto_80": [
+      {
+        "id": 251210703,
+        "name": "Combo Baitcast",
+        "revenue": 1513484.0,
+        "cumulative_pct": 27.98470633960609
+      },
+      {
+        "id": 152958059,
+        "name": "Mojarra (120 mm, P/Q, 14)",
+        "revenue": 720392.0,
+        "cumulative_pct": 41.304938710349035
+      },
+      {
+        "id": 251213818,
+        "name": "Combo Spinning",
+        "revenue": 505136.0,
+        "cumulative_pct": 50.645032574283675
+      },
+      {
+        "id": 201905084,
+        "name": "Extreme (140 mm, P/BR, 11)",
+        "revenue": 415812.0,
+        "cumulative_pct": 58.333502827345015
+      },
+      {
+        "id": 251212672,
+        "name": "Combo Trolling",
+        "revenue": 344192.0,
+        "cumulative_pct": 64.69770095857184
+      },
+      {
+        "id": 268340601,
+        "name": "Mojarra 120 - Paleta Quebrada - Baitcasting (120 mm, 03)",
+        "revenue": 335672.0,
+        "cumulative_pct": 70.90436211021154
+      },
+      {
+        "id": 268351818,
+        "name": "Mojarra 90 (90 mm, Paleta Quebrada, 11)",
+        "revenue": 236600.0,
+        "cumulative_pct": 75.27915663724374
+      },
+      {
+        "id": 201848454,
+        "name": "Tabano (60 mm, P/C, 16)",
+        "revenue": 227811.0,
+        "cumulative_pct": 79.49144030587321
+      }
+    ],
+    "pareto_20": [
+      {
+        "id": 201937985,
+        "name": "Canibal (P/L, 16)",
+        "revenue": 216184.0
+      },
+      {
+        "id": 202430926,
+        "name": "Termo Explorer 1 lt (Negro)",
+        "revenue": 171990.0
+      },
+      {
+        "id": 202430910,
+        "name": "Cuchillo Premium Bowie",
+        "revenue": 99900.0
+      },
+      {
+        "id": 202430932,
+        "name": "Vaso Térmico Clásico 750 ml (Verde)",
+        "revenue": 87400.0
+      },
+      {
+        "id": 269214367,
+        "name": "TNT 140 (140 mm, 03)",
+        "revenue": 74800.0
+      },
+      {
+        "id": 201941960,
+        "name": "TNT (110 mm, 26)",
+        "revenue": 72877.0
+      },
+      {
+        "id": 202430907,
+        "name": "Cuchillo de Pesca Skinning",
+        "revenue": 49368.0
+      },
+      {
+        "id": 202044227,
+        "name": "Turbo (17)",
+        "revenue": 48205.0
+      },
+      {
+        "id": 202430887,
+        "name": "Linterna Eco Recargable",
+        "revenue": 41460.0
+      },
+      {
+        "id": 202430881,
+        "name": "Linterna Scubaglow",
+        "revenue": 39400.0
+      },
+      {
+        "id": 268936103,
+        "name": "Cascarudo - Paleta Corta - Trolling/Baitcasting (11)",
+        "revenue": 38502.0
+      },
+      {
+        "id": 268940379,
+        "name": "Cascarudo - Paleta Quebrada - Baitcasting (06)",
+        "revenue": 38502.0
+      },
+      {
+        "id": 269119214,
+        "name": "Tabano 60 (60 mm, Paleta Larga, 10)",
+        "revenue": 33400.0
+      },
+      {
+        "id": 269130475,
+        "name": "Tabano 50 (50 mm, Paleta Corta, 03)",
+        "revenue": 31800.0
+      },
+      {
+        "id": 202430903,
+        "name": "Cuchillo Táctico Raptor",
+        "revenue": 29477.0
+      },
+      {
+        "id": 269138522,
+        "name": "Extreme 140 (140 mm, Paleta Larga, 11)",
+        "revenue": 18990.0
+      },
+      {
+        "id": 269153774,
+        "name": "Extreme 110 (110 mm, Paleta BR, 15)",
+        "revenue": 16900.0
+      }
+    ],
+    "summary": {
+      "total_products": 25,
+      "total_revenue": 5408254.0,
+      "total_quantity": 205,
+      "total_margin": 2163301.6,
+      "products_80_count": 8,
+      "products_80_pct": 32.0,
+      "top_1_pct": 27.98470633960609,
+      "top_3_pct": 50.64503257428368,
+      "top_5_pct": 64.69770095857184,
+      "hhi": 1263.6790572525601,
+      "concentration": "BAJA",
+      "cost_assumption": 0.6
+    }
+  }
+}

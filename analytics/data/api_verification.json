@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-01-09T23:36:00",
+  "verification_result": "PASSED",
+  "summary": {
+    "api_period": "2025-01-01 to 2026-01-09",
+    "dashboard_period": "2024-07 to 2025-12"
+  },
+  "comparison": {
+    "orders": {
+      "api_2025": 51,
+      "dashboard_total": 59,
+      "difference": 8,
+      "explanation": "8 ordenes de 2024 incluidas en dashboard"
+    },
+    "sales": {
+      "api_2025": 4498417,
+      "dashboard_total": 4824094.94,
+      "difference": 325677.94,
+      "explanation": "Diferencia corresponde a ventas 2024 ($325,678)"
+    },
+    "products": {
+      "api": 41,
+      "dashboard": 41,
+      "match": true
+    },
+    "customers": {
+      "api": 88,
+      "dashboard": 88,
+      "match": true
+    }
+  },
+  "monthly_breakdown_api_2025": {
+    "2025-02": 46771,
+    "2025-03": 2139647,
+    "2025-04": 979897,
+    "2025-05": 152927,
+    "2025-06": 45442,
+    "2025-07": 154517,
+    "2025-08": 152073,
+    "2025-11": 782447,
+    "2025-12": 44695
+  },
+  "order_status": {
+    "open": 45,
+    "cancelled": 6
+  },
+  "conclusion": "Los datos del dashboard son correctos y provienen de la API real de Tienda Nube. La diferencia entre API (2025) y Dashboard se explica por las 8 ordenes de 2024 incluidas en el historico."
+}

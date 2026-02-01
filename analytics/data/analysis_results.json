@@ -1,0 +1,4716 @@
+{
+  "generated_at": "2026-02-01T16:53:19.862308",
+  "data_summary": {
+    "orders_count": 80,
+    "products_count": 41,
+    "customers_count": 108
+  },
+  "descriptive": {
+    "kpis": {
+      "total_revenue": 7189156.8100000005,
+      "total_orders": 80,
+      "avg_ticket": 89864.46012500001,
+      "unique_customers": 76,
+      "total_customers": 108
+    },
+    "monthly_sales": [
+      {
+        "month": "2024-07",
+        "revenue": 108785.35,
+        "orders": 2
+      },
+      {
+        "month": "2024-08",
+        "revenue": 16720.96,
+        "orders": 1
+      },
+      {
+        "month": "2024-09",
+        "revenue": 29631.83,
+        "orders": 1
+      },
+      {
+        "month": "2024-11",
+        "revenue": 39479.88,
+        "orders": 1
+      },
+      {
+        "month": "2024-12",
+        "revenue": 131059.81,
+        "orders": 3
+      },
+      {
+        "month": "2025-02",
+        "revenue": 46771.2,
+        "orders": 1
+      },
+      {
+        "month": "2025-03",
+        "revenue": 2139647.48,
+        "orders": 25
+      },
+      {
+        "month": "2025-04",
+        "revenue": 979897.31,
+        "orders": 11
+      },
+      {
+        "month": "2025-05",
+        "revenue": 152926.85,
+        "orders": 2
+      },
+      {
+        "month": "2025-06",
+        "revenue": 45441.75,
+        "orders": 1
+      },
+      {
+        "month": "2025-07",
+        "revenue": 154517.36,
+        "orders": 1
+      },
+      {
+        "month": "2025-08",
+        "revenue": 152073.16,
+        "orders": 2
+      },
+      {
+        "month": "2025-11",
+        "revenue": 782447.0,
+        "orders": 7
+      },
+      {
+        "month": "2025-12",
+        "revenue": 44695.0,
+        "orders": 1
+      },
+      {
+        "month": "2026-01",
+        "revenue": 1892847.72,
+        "orders": 17
+      },
+      {
+        "month": "2026-02",
+        "revenue": 472214.15,
+        "orders": 4
+      }
+    ],
+    "top_products": [
+      {
+        "id": 251210703,
+        "name": "Combo Baitcast",
+        "revenue": 3424559.0,
+        "quantity": 38
+      },
+      {
+        "id": 152958059,
+        "name": "Mojarra (120 mm, P/Q, 14)",
+        "revenue": 720392.0,
+        "quantity": 48
+      },
+      {
+        "id": 268340601,
+        "name": "Mojarra 120 - Paleta Quebrada - Baitcasting (120 mm, 03)",
+        "revenue": 510872.0,
+        "quantity": 26
+      },
+      {
+        "id": 251213818,
+        "name": "Combo Spinning",
+        "revenue": 505136.0,
+        "quantity": 8
+      },
+      {
+        "id": 201905084,
+        "name": "Extreme (140 mm, P/BR, 11)",
+        "revenue": 415812.0,
+        "quantity": 28
+      },
+      {
+        "id": 251212672,
+        "name": "Combo Trolling",
+        "revenue": 344192.0,
+        "quantity": 4
+      },
+      {
+        "id": 268351818,
+        "name": "Mojarra 90 (90 mm, Paleta Quebrada, 11)",
+        "revenue": 340100.0,
+        "quantity": 19
+      },
+      {
+        "id": 202430926,
+        "name": "Termo Explorer 1 lt (Negro)",
+        "revenue": 328990.0,
+        "quantity": 6
+      },
+      {
+        "id": 201848454,
+        "name": "Tabano (60 mm, P/C, 16)",
+        "revenue": 227811.0,
+        "quantity": 16
+      },
+      {
+        "id": 201937985,
+        "name": "Canibal (P/L, 16)",
+        "revenue": 216184.0,
+        "quantity": 18
+      }
+    ],
+    "province_sales": [
+      {
+        "province": "Buenos Aires",
+        "revenue": 2692516.37
+      },
+      {
+        "province": "Santa Fe",
+        "revenue": 771853.12
+      },
+      {
+        "province": "Corrientes",
+        "revenue": 730691.1699999999
+      },
+      {
+        "province": "Salta",
+        "revenue": 517405.07
+      },
+      {
+        "province": "Capital Federal",
+        "revenue": 484395.67
+      },
+      {
+        "province": "Córdoba",
+        "revenue": 467128.0
+      },
+      {
+        "province": "Entre Ríos",
+        "revenue": 450443.72
+      },
+      {
+        "province": "Tucumán",
+        "revenue": 370445.31999999995
+      },
+      {
+        "province": "Misiones",
+        "revenue": 298934.35
+      },
+      {
+        "province": "Rio Negro",
+        "revenue": 127348.16
+      }
+    ],
+    "payment_methods": [
+      {
+        "method": "Mercado Pago",
+        "revenue": 4062963.57,
+        "percentage": 56.5151613378148
+      },
+      {
+        "method": "Transferencia",
+        "revenue": 1377371.75,
+        "percentage": 19.159016646904938
+      },
+      {
+        "method": "Pago Nube",
+        "revenue": 1376372.46,
+        "percentage": 19.145116685805046
+      },
+      {
+        "method": "Transferencia Bancaria",
+        "revenue": 325677.83,
+        "percentage": 4.53012555724181
+      },
+      {
+        "method": "A convenir",
+        "revenue": 46771.2,
+        "percentage": 0.6505797722334004
+      }
+    ],
+    "weekday_sales": [
+      {
+        "day": "Lunes",
+        "day_index": 0,
+        "revenue": 1317983.58
+      },
+      {
+        "day": "Martes",
+        "day_index": 1,
+        "revenue": 1317586.57
+      },
+      {
+        "day": "Miercoles",
+        "day_index": 2,
+        "revenue": 571083.78
+      },
+      {
+        "day": "Jueves",
+        "day_index": 3,
+        "revenue": 665397.78
+      },
+      {
+        "day": "Viernes",
+        "day_index": 4,
+        "revenue": 1599902.25
+      },
+      {
+        "day": "Sabado",
+        "day_index": 5,
+        "revenue": 1008218.58
+      },
+      {
+        "day": "Domingo",
+        "day_index": 6,
+        "revenue": 708984.27
+      }
+    ],
+    "hourly_distribution": [
+      {
+        "hour": 0,
+        "orders": 2
+      },
+      {
+        "hour": 1,
+        "orders": 5
+      },
+      {
+        "hour": 2,
+        "orders": 3
+      },
+      {
+        "hour": 4,
+        "orders": 3
+      },
+      {
+        "hour": 5,
+        "orders": 1
+      },
+      {
+        "hour": 6,
+        "orders": 2
+      },
+      {
+        "hour": 8,
+        "orders": 2
+      },
+      {
+        "hour": 11,
+        "orders": 2
+      },
+      {
+        "hour": 12,
+        "orders": 4
+      },
+      {
+        "hour": 13,
+        "orders": 7
+      },
+      {
+        "hour": 14,
+        "orders": 7
+      },
+      {
+        "hour": 15,
+        "orders": 6
+      },
+      {
+        "hour": 16,
+        "orders": 2
+      },
+      {
+        "hour": 17,
+        "orders": 7
+      },
+      {
+        "hour": 18,
+        "orders": 3
+      },
+      {
+        "hour": 19,
+        "orders": 5
+      },
+      {
+        "hour": 20,
+        "orders": 3
+      },
+      {
+        "hour": 21,
+        "orders": 4
+      },
+      {
+        "hour": 22,
+        "orders": 4
+      },
+      {
+        "hour": 23,
+        "orders": 8
+      }
+    ]
+  },
+  "regression": {
+    "linear_regression": {
+      "slope": 256.3851020199203,
+      "intercept": 47660.841027579074,
+      "r_squared": 0.10945867982866442,
+      "trend": "growing",
+      "daily_change": 256.3851020199203
+    },
+    "predictions_30d": {
+      "total": 5987070.419231456,
+      "daily_avg": 199569.01397438187,
+      "values": [
+        195851.429995093,
+        196107.8150971129,
+        196364.20019913284,
+        196620.58530115275,
+        196876.97040317266,
+        197133.3555051926,
+        197389.7406072125,
+        197646.12570923244,
+        197902.51081125234,
+        198158.89591327228,
+        198415.2810152922,
+        198671.66611731212,
+        198928.05121933203,
+        199184.43632135194,
+        199440.82142337188,
+        199697.20652539178,
+        199953.59162741172,
+        200209.97672943163,
+        200466.36183145156,
+        200722.74693347147,
+        200979.1320354914,
+        201235.5171375113,
+        201491.90223953125,
+        201748.28734155116,
+        202004.67244357106,
+        202261.057545591,
+        202517.4426476109,
+        202773.82774963084,
+        203030.21285165075,
+        203286.5979536707
+      ]
+    },
+    "daily_data": [
+      {
+        "date": "2024-07-04",
+        "actual": 40068.55,
+        "predicted": 47660.841027579074
+      },
+      {
+        "date": "2024-07-24",
+        "actual": 68716.8,
+        "predicted": 52788.54306797748
+      },
+      {
+        "date": "2024-08-21",
+        "actual": 16720.96,
+        "predicted": 59967.325924535246
+      },
+      {
+        "date": "2024-09-19",
+        "actual": 29631.83,
+        "predicted": 67402.49388311294
+      },
+      {
+        "date": "2024-11-19",
+        "actual": 39479.88,
+        "predicted": 83041.98510632807
+      },
+      {
+        "date": "2024-12-22",
+        "actual": 32496.61,
+        "predicted": 91502.69347298544
+      },
+      {
+        "date": "2024-12-30",
+        "actual": 98563.2,
+        "predicted": 93553.77428914481
+      },
+      {
+        "date": "2025-02-28",
+        "actual": 46771.2,
+        "predicted": 108936.88041034002
+      },
+      {
+        "date": "2025-03-07",
+        "actual": 417316.91000000003,
+        "predicted": 110731.57612447947
+      },
+      {
+        "date": "2025-03-08",
+        "actual": 96240.96,
+        "predicted": 110987.96122649938
+      },
+      {
+        "date": "2025-03-10",
+        "actual": 259697.19,
+        "predicted": 111500.73143053922
+      },
+      {
+        "date": "2025-03-13",
+        "actual": 40077.16,
+        "predicted": 112269.88673659899
+      },
+      {
+        "date": "2025-03-15",
+        "actual": 76349.6,
+        "predicted": 112782.65694063882
+      },
+      {
+        "date": "2025-03-17",
+        "actual": 43082.6,
+        "predicted": 113295.42714467866
+      },
+      {
+        "date": "2025-03-21",
+        "actual": 184928.7,
+        "predicted": 114320.96755275835
+      },
+      {
+        "date": "2025-03-22",
+        "actual": 55070.72,
+        "predicted": 114577.35265477825
+      },
+      {
+        "date": "2025-03-23",
+        "actual": 34237.55,
+        "predicted": 114833.73775679819
+      },
+      {
+        "date": "2025-03-24",
+        "actual": 315374.6,
+        "predicted": 115090.1228588181
+      },
+      {
+        "date": "2025-03-25",
+        "actual": 109525.04,
+        "predicted": 115346.50796083803
+      },
+      {
+        "date": "2025-03-26",
+        "actual": 168086.77000000002,
+        "predicted": 115602.89306285794
+      },
+      {
+        "date": "2025-03-27",
+        "actual": 127911.52,
+        "predicted": 115859.27816487788
+      },
+      {
+        "date": "2025-03-30",
+        "actual": 28145.96,
+        "predicted": 116628.43347093763
+      },
+      {
+        "date": "2025-03-31",
+        "actual": 183602.2,
+        "predicted": 116884.81857295756
+      },
+      {
+        "date": "2025-04-02",
+        "actual": 317559.25,
+        "predicted": 117397.58877699738
+      },
+      {
+        "date": "2025-04-04",
+        "actual": 124666.06,
+        "predicted": 117910.35898103722
+      },
+      {
+        "date": "2025-04-05",
+        "actual": 55361.58,
+        "predicted": 118166.74408305716
+      },
+      {
+        "date": "2025-04-07",
+        "actual": 116748.89,
+        "predicted": 118679.514287097
+      },
+      {
+        "date": "2025-04-10",
+        "actual": 293873.35,
+        "predicted": 119448.66959315675
+      },
+      {
+        "date": "2025-04-11",
+        "actual": 50043.35,
+        "predicted": 119705.05469517666
+      },
+      {
+        "date": "2025-04-22",
+        "actual": 21644.83,
+        "predicted": 122525.29081739578
+      },
+      {
+        "date": "2025-05-05",
+        "actual": 41948.15,
+        "predicted": 125858.29714365475
+      },
+      {
+        "date": "2025-05-17",
+        "actual": 110978.7,
+        "predicted": 128934.91836789381
+      },
+      {
+        "date": "2025-06-30",
+        "actual": 45441.75,
+        "predicted": 140215.86285677028
+      },
+      {
+        "date": "2025-07-26",
+        "actual": 154517.36,
+        "predicted": 146881.87550928822
+      },
+      {
+        "date": "2025-08-05",
+        "actual": 107193.0,
+        "predicted": 149445.72652948744
+      },
+      {
+        "date": "2025-08-07",
+        "actual": 44880.16,
+        "predicted": 149958.49673352725
+      },
+      {
+        "date": "2025-11-04",
+        "actual": 305074.0,
+        "predicted": 172776.77081330016
+      },
+      {
+        "date": "2025-11-11",
+        "actual": 141695.0,
+        "predicted": 174571.46652743962
+      },
+      {
+        "date": "2025-11-18",
+        "actual": 31513.0,
+        "predicted": 176366.16224157906
+      },
+      {
+        "date": "2025-11-22",
+        "actual": 92240.0,
+        "predicted": 177391.70264965875
+      },
+      {
+        "date": "2025-11-28",
+        "actual": 211925.0,
+        "predicted": 178930.01326177825
+      },
+      {
+        "date": "2025-12-19",
+        "actual": 44695.0,
+        "predicted": 184314.10040419656
+      },
+      {
+        "date": "2026-01-18",
+        "actual": 59000.0,
+        "predicted": 192005.6534647942
+      },
+      {
+        "date": "2026-01-19",
+        "actual": 72425.0,
+        "predicted": 192262.0385668141
+      },
+      {
+        "date": "2026-01-23",
+        "actual": 398980.0,
+        "predicted": 193287.57897489378
+      },
+      {
+        "date": "2026-01-24",
+        "actual": 92100.0,
+        "predicted": 193543.96407691372
+      },
+      {
+        "date": "2026-01-25",
+        "actual": 82890.0,
+        "predicted": 193800.34917893363
+      },
+      {
+        "date": "2026-01-26",
+        "actual": 141100.0,
+        "predicted": 194056.73428095356
+      },
+      {
+        "date": "2026-01-27",
+        "actual": 561461.8200000001,
+        "predicted": 194313.11938297347
+      },
+      {
+        "date": "2026-01-29",
+        "actual": 88955.21,
+        "predicted": 194825.8895870133
+      },
+      {
+        "date": "2026-01-30",
+        "actual": 120576.03,
+        "predicted": 195082.27468903322
+      },
+      {
+        "date": "2026-01-31",
+        "actual": 275359.66000000003,
+        "predicted": 195338.65979105316
+      },
+      {
+        "date": "2026-02-01",
+        "actual": 472214.15,
+        "predicted": 195595.04489307306
+      }
+    ]
+  },
+  "segmentation": {
+    "segments": [
+      {
+        "segment": "Champions",
+        "count": 2,
+        "percentage": 2.631578947368421,
+        "revenue": 529205.6599999999
+      },
+      {
+        "segment": "Loyal",
+        "count": 4,
+        "percentage": 5.263157894736842,
+        "revenue": 1101133.12
+      },
+      {
+        "segment": "Potential",
+        "count": 27,
+        "percentage": 35.526315789473685,
+        "revenue": 3024506.0
+      },
+      {
+        "segment": "At Risk",
+        "count": 37,
+        "percentage": 48.68421052631579,
+        "revenue": 2307197.4
+      },
+      {
+        "segment": "Lost",
+        "count": 6,
+        "percentage": 7.894736842105263,
+        "revenue": 227114.63
+      }
+    ],
+    "metrics": {
+      "total_customers": 76,
+      "avg_ticket": 94594.16855263157,
+      "avg_frequency": 1.0526315789473684,
+      "avg_recency": 214.67105263157896,
+      "estimated_ltv": 189188.33710526314
+    },
+    "customer_details": [
+      {
+        "customer_id": 166717651,
+        "recency": 577,
+        "frequency": 1,
+        "monetary": 40068.55,
+        "segment": "Lost",
+        "score": 0.026279193703755706
+      },
+      {
+        "customer_id": 168891377,
+        "recency": 557,
+        "frequency": 1,
+        "monetary": 68716.8,
+        "segment": "Lost",
+        "score": 0.06892323002677465
+      },
+      {
+        "customer_id": 169582409,
+        "recency": 13,
+        "frequency": 1,
+        "monetary": 72425.0,
+        "segment": "Potential",
+        "score": 0.3559393320679945
+      },
+      {
+        "customer_id": 172332286,
+        "recency": 529,
+        "frequency": 1,
+        "monetary": 16720.96,
+        "segment": "Lost",
+        "score": 0.024956672443674166
+      },
+      {
+        "customer_id": 176453023,
+        "recency": 500,
+        "frequency": 1,
+        "monetary": 29631.83,
+        "segment": "Lost",
+        "score": 0.05456666528882194
+      },
+      {
+        "customer_id": 185533779,
+        "recency": 439,
+        "frequency": 1,
+        "monetary": 39479.88,
+        "segment": "Lost",
+        "score": 0.09736704154940563
+      },
+      {
+        "customer_id": 191878680,
+        "recency": 406,
+        "frequency": 1,
+        "monetary": 32496.61,
+        "segment": "Lost",
+        "score": 0.1066646404544779
+      },
+      {
+        "customer_id": 192620443,
+        "recency": 398,
+        "frequency": 2,
+        "monetary": 98563.2,
+        "segment": "Potential",
+        "score": 0.48518622413626866
+      },
+      {
+        "customer_id": 200499885,
+        "recency": 338,
+        "frequency": 1,
+        "monetary": 46771.2,
+        "segment": "At Risk",
+        "score": 0.1580868830337861
+      },
+      {
+        "customer_id": 201273130,
+        "recency": 331,
+        "frequency": 1,
+        "monetary": 66249.84,
+        "segment": "At Risk",
+        "score": 0.18365084279977015
+      },
+      {
+        "customer_id": 201407598,
+        "recency": 330,
+        "frequency": 1,
+        "monetary": 351067.07,
+        "segment": "Loyal",
+        "score": 0.504750634495046
+      },
+      {
+        "customer_id": 201484533,
+        "recency": 311,
+        "frequency": 2,
+        "monetary": 118067.52,
+        "segment": "Loyal",
+        "score": 0.5523735424441686
+      },
+      {
+        "customer_id": 201667097,
+        "recency": 328,
+        "frequency": 1,
+        "monetary": 47583.99,
+        "segment": "At Risk",
+        "score": 0.16420103650085247
+      },
+      {
+        "customer_id": 201700937,
+        "recency": 328,
+        "frequency": 1,
+        "monetary": 134163.2,
+        "segment": "At Risk",
+        "score": 0.26165142989512324
+      },
+      {
+        "customer_id": 201779120,
+        "recency": 327,
+        "frequency": 1,
+        "monetary": 77950.0,
+        "segment": "At Risk",
+        "score": 0.19889983783536916
+      },
+      {
+        "customer_id": 202299754,
+        "recency": 324,
+        "frequency": 1,
+        "monetary": 40077.16,
+        "segment": "At Risk",
+        "score": 0.15783134581016883
+      },
+      {
+        "customer_id": 202519560,
+        "recency": 323,
+        "frequency": 1,
+        "monetary": 76349.6,
+        "segment": "At Risk",
+        "score": 0.19917820881047948
+      },
+      {
+        "customer_id": 202774619,
+        "recency": 320,
+        "frequency": 1,
+        "monetary": 43082.6,
+        "segment": "At Risk",
+        "score": 0.1632938818973317
+      },
+      {
+        "customer_id": 203160446,
+        "recency": 317,
+        "frequency": 1,
+        "monetary": 75403.66,
+        "segment": "At Risk",
+        "score": 0.2012330773860057
+      },
+      {
+        "customer_id": 203201914,
+        "recency": 317,
+        "frequency": 1,
+        "monetary": 109525.04,
+        "segment": "At Risk",
+        "score": 0.23963885521829825
+      },
+      {
+        "customer_id": 203288186,
+        "recency": 316,
+        "frequency": 1,
+        "monetary": 55070.72,
+        "segment": "At Risk",
+        "score": 0.17886699418096072
+      },
+      {
+        "customer_id": 203405042,
+        "recency": 315,
+        "frequency": 1,
+        "monetary": 34237.55,
+        "segment": "At Risk",
+        "score": 0.1559378703765893
+      },
+      {
+        "customer_id": 203487370,
+        "recency": 314,
+        "frequency": 2,
+        "monetary": 315374.6,
+        "segment": "Champions",
+        "score": 0.7728953860131932
+      },
+      {
+        "customer_id": 203682769,
+        "recency": 313,
+        "frequency": 1,
+        "monetary": 109525.04,
+        "segment": "At Risk",
+        "score": 0.24171857792193777
+      },
+      {
+        "customer_id": 203772014,
+        "recency": 312,
+        "frequency": 1,
+        "monetary": 50513.6,
+        "segment": "At Risk",
+        "score": 0.17581738922331877
+      },
+      {
+        "customer_id": 203792577,
+        "recency": 312,
+        "frequency": 1,
+        "monetary": 50513.6,
+        "segment": "At Risk",
+        "score": 0.17581738922331877
+      },
+      {
+        "customer_id": 203840226,
+        "recency": 311,
+        "frequency": 1,
+        "monetary": 67059.57,
+        "segment": "At Risk",
+        "score": 0.19496085880181047
+      },
+      {
+        "customer_id": 203934758,
+        "recency": 311,
+        "frequency": 1,
+        "monetary": 106084.96,
+        "segment": "At Risk",
+        "score": 0.23888641099690258
+      },
+      {
+        "customer_id": 204223856,
+        "recency": 308,
+        "frequency": 1,
+        "monetary": 28145.96,
+        "segment": "At Risk",
+        "score": 0.15272091411571204
+      },
+      {
+        "customer_id": 204365301,
+        "recency": 307,
+        "frequency": 1,
+        "monetary": 35248.16,
+        "segment": "At Risk",
+        "score": 0.16123482145143198
+      },
+      {
+        "customer_id": 204385476,
+        "recency": 307,
+        "frequency": 1,
+        "monetary": 57544.7,
+        "segment": "At Risk",
+        "score": 0.1863309917021318
+      },
+      {
+        "customer_id": 204447834,
+        "recency": 306,
+        "frequency": 1,
+        "monetary": 90809.34,
+        "segment": "At Risk",
+        "score": 0.22429238498920198
+      },
+      {
+        "customer_id": 204608982,
+        "recency": 305,
+        "frequency": 1,
+        "monetary": 66752.47,
+        "segment": "At Risk",
+        "score": 0.19773478232500824
+      },
+      {
+        "customer_id": 204662458,
+        "recency": 305,
+        "frequency": 1,
+        "monetary": 250806.78,
+        "segment": "Potential",
+        "score": 0.4048995845380461
+      },
+      {
+        "customer_id": 204991447,
+        "recency": 303,
+        "frequency": 1,
+        "monetary": 91785.07,
+        "segment": "At Risk",
+        "score": 0.22695042303172652
+      },
+      {
+        "customer_id": 205005571,
+        "recency": 303,
+        "frequency": 1,
+        "monetary": 32880.99,
+        "segment": "At Risk",
+        "score": 0.1606501441480592
+      },
+      {
+        "customer_id": 205132089,
+        "recency": 302,
+        "frequency": 1,
+        "monetary": 55361.58,
+        "segment": "At Risk",
+        "score": 0.18647340502570353
+      },
+      {
+        "customer_id": 205446451,
+        "recency": 299,
+        "frequency": 1,
+        "monetary": 38081.28,
+        "segment": "At Risk",
+        "score": 0.1685831231503447
+      },
+      {
+        "customer_id": 205484096,
+        "recency": 299,
+        "frequency": 1,
+        "monetary": 78667.61,
+        "segment": "At Risk",
+        "score": 0.21426561234064448
+      },
+      {
+        "customer_id": 205871846,
+        "recency": 297,
+        "frequency": 1,
+        "monetary": 178694.38,
+        "segment": "Potential",
+        "score": 0.3278919489728259
+      },
+      {
+        "customer_id": 205873477,
+        "recency": 297,
+        "frequency": 1,
+        "monetary": 115178.97,
+        "segment": "At Risk",
+        "score": 0.2564013256338234
+      },
+      {
+        "customer_id": 206035657,
+        "recency": 296,
+        "frequency": 1,
+        "monetary": 50043.35,
+        "segment": "At Risk",
+        "score": 0.18360698383046564
+      },
+      {
+        "customer_id": 207539987,
+        "recency": 284,
+        "frequency": 1,
+        "monetary": 21644.83,
+        "segment": "At Risk",
+        "score": 0.15788181609430185
+      },
+      {
+        "customer_id": 208313971,
+        "recency": 4,
+        "frequency": 1,
+        "monetary": 372098.53,
+        "segment": "Loyal",
+        "score": 0.6979202772963604
+      },
+      {
+        "customer_id": 209062887,
+        "recency": 272,
+        "frequency": 1,
+        "monetary": 41948.15,
+        "segment": "At Risk",
+        "score": 0.18697365889709813
+      },
+      {
+        "customer_id": 210979339,
+        "recency": 259,
+        "frequency": 1,
+        "monetary": 110978.7,
+        "segment": "At Risk",
+        "score": 0.27143102097049243
+      },
+      {
+        "customer_id": 217336145,
+        "recency": 216,
+        "frequency": 1,
+        "monetary": 45441.75,
+        "segment": "At Risk",
+        "score": 0.2200220451801868
+      },
+      {
+        "customer_id": 222816938,
+        "recency": 190,
+        "frequency": 1,
+        "monetary": 154517.36,
+        "segment": "Potential",
+        "score": 0.35631176150782684
+      },
+      {
+        "customer_id": 224415721,
+        "recency": 180,
+        "frequency": 1,
+        "monetary": 107193.0,
+        "segment": "Potential",
+        "score": 0.30824449885456795
+      },
+      {
+        "customer_id": 224837675,
+        "recency": 177,
+        "frequency": 1,
+        "monetary": 44880.16,
+        "segment": "At Risk",
+        "score": 0.23966723636869958
+      },
+      {
+        "customer_id": 238763057,
+        "recency": 89,
+        "frequency": 1,
+        "monetary": 45174.0,
+        "segment": "At Risk",
+        "score": 0.28575187140982306
+      },
+      {
+        "customer_id": 238870010,
+        "recency": 89,
+        "frequency": 1,
+        "monetary": 259900.0,
+        "segment": "Loyal",
+        "score": 0.5274396065136452
+      },
+      {
+        "customer_id": 239963768,
+        "recency": 82,
+        "frequency": 1,
+        "monetary": 106739.0,
+        "segment": "Potential",
+        "score": 0.35868669929221636
+      },
+      {
+        "customer_id": 240221539,
+        "recency": 82,
+        "frequency": 1,
+        "monetary": 34956.0,
+        "segment": "At Risk",
+        "score": 0.27789037891667884
+      },
+      {
+        "customer_id": 241690097,
+        "recency": 75,
+        "frequency": 1,
+        "monetary": 31513.0,
+        "segment": "At Risk",
+        "score": 0.2776545787259498
+      },
+      {
+        "customer_id": 242258402,
+        "recency": 71,
+        "frequency": 1,
+        "monetary": 92240.0,
+        "segment": "Potential",
+        "score": 0.3480863924183369
+      },
+      {
+        "customer_id": 243449751,
+        "recency": 64,
+        "frequency": 1,
+        "monetary": 211925.0,
+        "segment": "Potential",
+        "score": 0.48643896740277714
+      },
+      {
+        "customer_id": 247621904,
+        "recency": 43,
+        "frequency": 1,
+        "monetary": 44695.0,
+        "segment": "Potential",
+        "score": 0.3091295376141709
+      },
+      {
+        "customer_id": 253905841,
+        "recency": 14,
+        "frequency": 1,
+        "monetary": 59000.0,
+        "segment": "Potential",
+        "score": 0.3403087122171882
+      },
+      {
+        "customer_id": 254583149,
+        "recency": 9,
+        "frequency": 1,
+        "monetary": 49000.0,
+        "segment": "Potential",
+        "score": 0.33165273120202887
+      },
+      {
+        "customer_id": 254666923,
+        "recency": 8,
+        "frequency": 1,
+        "monetary": 92100.0,
+        "segment": "Potential",
+        "score": 0.3806844461191333
+      },
+      {
+        "customer_id": 254681248,
+        "recency": 8,
+        "frequency": 1,
+        "monetary": 165780.0,
+        "segment": "Potential",
+        "score": 0.46361596033934704
+      },
+      {
+        "customer_id": 254690613,
+        "recency": 8,
+        "frequency": 1,
+        "monetary": 92100.0,
+        "segment": "Potential",
+        "score": 0.3806844461191333
+      },
+      {
+        "customer_id": 254748374,
+        "recency": 8,
+        "frequency": 1,
+        "monetary": 92100.0,
+        "segment": "Potential",
+        "score": 0.3806844461191333
+      },
+      {
+        "customer_id": 254836573,
+        "recency": 7,
+        "frequency": 1,
+        "monetary": 82890.0,
+        "segment": "Potential",
+        "score": 0.3708379375175165
+      },
+      {
+        "customer_id": 254929112,
+        "recency": 6,
+        "frequency": 1,
+        "monetary": 49000.0,
+        "segment": "Potential",
+        "score": 0.33321252322975853
+      },
+      {
+        "customer_id": 254929782,
+        "recency": 6,
+        "frequency": 1,
+        "monetary": 92100.0,
+        "segment": "Potential",
+        "score": 0.3817243074709531
+      },
+      {
+        "customer_id": 255203491,
+        "recency": 4,
+        "frequency": 1,
+        "monetary": 92119.08,
+        "segment": "Potential",
+        "score": 0.38278564457319786
+      },
+      {
+        "customer_id": 255205297,
+        "recency": 4,
+        "frequency": 1,
+        "monetary": 97244.21,
+        "segment": "Potential",
+        "score": 0.3885543035237332
+      },
+      {
+        "customer_id": 255470155,
+        "recency": 2,
+        "frequency": 1,
+        "monetary": 88955.21,
+        "segment": "Potential",
+        "score": 0.3802643695257789
+      },
+      {
+        "customer_id": 255624414,
+        "recency": 1,
+        "frequency": 1,
+        "monetary": 120576.03,
+        "segment": "Potential",
+        "score": 0.4163755391197781
+      },
+      {
+        "customer_id": 255694244,
+        "recency": 1,
+        "frequency": 1,
+        "monetary": 184455.53,
+        "segment": "Potential",
+        "score": 0.48827596885145763
+      },
+      {
+        "customer_id": 255719162,
+        "recency": 1,
+        "frequency": 1,
+        "monetary": 90904.13,
+        "segment": "Potential",
+        "score": 0.3829779333001424
+      },
+      {
+        "customer_id": 255809168,
+        "recency": 0,
+        "frequency": 1,
+        "monetary": 132407.21,
+        "segment": "Potential",
+        "score": 0.43021221344948696
+      },
+      {
+        "customer_id": 255838614,
+        "recency": 0,
+        "frequency": 1,
+        "monetary": 125975.88,
+        "segment": "Potential",
+        "score": 0.4229733435343148
+      },
+      {
+        "customer_id": 255846808,
+        "recency": 0,
+        "frequency": 2,
+        "monetary": 213831.06,
+        "segment": "Champions",
+        "score": 0.8218599221104472
+      }
+    ]
+  },
+  "forecasting": {
+    "historical": [
+      {
+        "date": "2024-07-04",
+        "actual": 40068.55,
+        "sma_7": 40068.55
+      },
+      {
+        "date": "2024-07-05",
+        "actual": 0.0,
+        "sma_7": 20034.275
+      },
+      {
+        "date": "2024-07-06",
+        "actual": 0.0,
+        "sma_7": 13356.183333333334
+      },
+      {
+        "date": "2024-07-07",
+        "actual": 0.0,
+        "sma_7": 10017.1375
+      },
+      {
+        "date": "2024-07-08",
+        "actual": 0.0,
+        "sma_7": 8013.710000000001
+      },
+      {
+        "date": "2024-07-09",
+        "actual": 0.0,
+        "sma_7": 6678.091666666667
+      },
+      {
+        "date": "2024-07-10",
+        "actual": 0.0,
+        "sma_7": 5724.078571428572
+      },
+      {
+        "date": "2024-07-11",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-07-12",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-07-13",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-07-14",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-07-15",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-07-16",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-07-17",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-07-18",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-07-19",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-07-20",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-07-21",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-07-22",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-07-23",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-07-24",
+        "actual": 68716.8,
+        "sma_7": 9816.685714285715
+      },
+      {
+        "date": "2024-07-25",
+        "actual": 0.0,
+        "sma_7": 9816.685714285715
+      },
+      {
+        "date": "2024-07-26",
+        "actual": 0.0,
+        "sma_7": 9816.685714285715
+      },
+      {
+        "date": "2024-07-27",
+        "actual": 0.0,
+        "sma_7": 9816.685714285715
+      },
+      {
+        "date": "2024-07-28",
+        "actual": 0.0,
+        "sma_7": 9816.685714285715
+      },
+      {
+        "date": "2024-07-29",
+        "actual": 0.0,
+        "sma_7": 9816.685714285715
+      },
+      {
+        "date": "2024-07-30",
+        "actual": 0.0,
+        "sma_7": 9816.685714285715
+      },
+      {
+        "date": "2024-07-31",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-01",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-02",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-03",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-04",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-05",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-06",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-07",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-08",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-09",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-10",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-11",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-12",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-13",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-14",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-15",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-16",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-17",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-18",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-19",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-20",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-21",
+        "actual": 16720.96,
+        "sma_7": 2388.7085714285713
+      },
+      {
+        "date": "2024-08-22",
+        "actual": 0.0,
+        "sma_7": 2388.7085714285713
+      },
+      {
+        "date": "2024-08-23",
+        "actual": 0.0,
+        "sma_7": 2388.7085714285713
+      },
+      {
+        "date": "2024-08-24",
+        "actual": 0.0,
+        "sma_7": 2388.7085714285713
+      },
+      {
+        "date": "2024-08-25",
+        "actual": 0.0,
+        "sma_7": 2388.7085714285713
+      },
+      {
+        "date": "2024-08-26",
+        "actual": 0.0,
+        "sma_7": 2388.7085714285713
+      },
+      {
+        "date": "2024-08-27",
+        "actual": 0.0,
+        "sma_7": 2388.7085714285713
+      },
+      {
+        "date": "2024-08-28",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-29",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-30",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-08-31",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-01",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-02",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-03",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-04",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-05",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-06",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-07",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-08",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-09",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-10",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-11",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-12",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-13",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-14",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-15",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-16",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-17",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-18",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-19",
+        "actual": 29631.83,
+        "sma_7": 4233.118571428572
+      },
+      {
+        "date": "2024-09-20",
+        "actual": 0.0,
+        "sma_7": 4233.118571428572
+      },
+      {
+        "date": "2024-09-21",
+        "actual": 0.0,
+        "sma_7": 4233.118571428572
+      },
+      {
+        "date": "2024-09-22",
+        "actual": 0.0,
+        "sma_7": 4233.118571428572
+      },
+      {
+        "date": "2024-09-23",
+        "actual": 0.0,
+        "sma_7": 4233.118571428572
+      },
+      {
+        "date": "2024-09-24",
+        "actual": 0.0,
+        "sma_7": 4233.118571428572
+      },
+      {
+        "date": "2024-09-25",
+        "actual": 0.0,
+        "sma_7": 4233.118571428572
+      },
+      {
+        "date": "2024-09-26",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-27",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-28",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-29",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-09-30",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-01",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-02",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-03",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-04",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-05",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-06",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-07",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-08",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-09",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-10",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-11",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-12",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-13",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-14",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-15",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-16",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-17",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-18",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-19",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-20",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-21",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-22",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-23",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-24",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-25",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-26",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-27",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-28",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-29",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-30",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-10-31",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-01",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-02",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-03",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-04",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-05",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-06",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-07",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-08",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-09",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-10",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-11",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-12",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-13",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-14",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-15",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-16",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-17",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-18",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-19",
+        "actual": 39479.88,
+        "sma_7": 5639.982857142857
+      },
+      {
+        "date": "2024-11-20",
+        "actual": 0.0,
+        "sma_7": 5639.982857142857
+      },
+      {
+        "date": "2024-11-21",
+        "actual": 0.0,
+        "sma_7": 5639.982857142857
+      },
+      {
+        "date": "2024-11-22",
+        "actual": 0.0,
+        "sma_7": 5639.982857142857
+      },
+      {
+        "date": "2024-11-23",
+        "actual": 0.0,
+        "sma_7": 5639.982857142857
+      },
+      {
+        "date": "2024-11-24",
+        "actual": 0.0,
+        "sma_7": 5639.982857142857
+      },
+      {
+        "date": "2024-11-25",
+        "actual": 0.0,
+        "sma_7": 5639.982857142857
+      },
+      {
+        "date": "2024-11-26",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-27",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-28",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-29",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-11-30",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-01",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-02",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-03",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-04",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-05",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-06",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-07",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-08",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-09",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-10",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-11",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-12",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-13",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-14",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-15",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-16",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-17",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-18",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-19",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-20",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-21",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-22",
+        "actual": 32496.61,
+        "sma_7": 4642.372857142857
+      },
+      {
+        "date": "2024-12-23",
+        "actual": 0.0,
+        "sma_7": 4642.372857142857
+      },
+      {
+        "date": "2024-12-24",
+        "actual": 0.0,
+        "sma_7": 4642.372857142857
+      },
+      {
+        "date": "2024-12-25",
+        "actual": 0.0,
+        "sma_7": 4642.372857142857
+      },
+      {
+        "date": "2024-12-26",
+        "actual": 0.0,
+        "sma_7": 4642.372857142857
+      },
+      {
+        "date": "2024-12-27",
+        "actual": 0.0,
+        "sma_7": 4642.372857142857
+      },
+      {
+        "date": "2024-12-28",
+        "actual": 0.0,
+        "sma_7": 4642.372857142857
+      },
+      {
+        "date": "2024-12-29",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2024-12-30",
+        "actual": 98563.2,
+        "sma_7": 14080.457142857142
+      },
+      {
+        "date": "2024-12-31",
+        "actual": 0.0,
+        "sma_7": 14080.457142857142
+      },
+      {
+        "date": "2025-01-01",
+        "actual": 0.0,
+        "sma_7": 14080.457142857142
+      },
+      {
+        "date": "2025-01-02",
+        "actual": 0.0,
+        "sma_7": 14080.457142857142
+      },
+      {
+        "date": "2025-01-03",
+        "actual": 0.0,
+        "sma_7": 14080.457142857142
+      },
+      {
+        "date": "2025-01-04",
+        "actual": 0.0,
+        "sma_7": 14080.457142857142
+      },
+      {
+        "date": "2025-01-05",
+        "actual": 0.0,
+        "sma_7": 14080.457142857142
+      },
+      {
+        "date": "2025-01-06",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-07",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-08",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-09",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-10",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-11",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-12",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-13",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-14",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-15",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-16",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-17",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-18",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-19",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-20",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-21",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-22",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-23",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-24",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-25",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-26",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-27",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-28",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-29",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-30",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-01-31",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-01",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-02",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-03",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-04",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-05",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-06",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-07",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-08",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-09",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-10",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-11",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-12",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-13",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-14",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-15",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-16",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-17",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-18",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-19",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-20",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-21",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-22",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-23",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-24",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-25",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-26",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-27",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-02-28",
+        "actual": 46771.2,
+        "sma_7": 6681.599999999999
+      },
+      {
+        "date": "2025-03-01",
+        "actual": 0.0,
+        "sma_7": 6681.599999999999
+      },
+      {
+        "date": "2025-03-02",
+        "actual": 0.0,
+        "sma_7": 6681.599999999999
+      },
+      {
+        "date": "2025-03-03",
+        "actual": 0.0,
+        "sma_7": 6681.599999999999
+      },
+      {
+        "date": "2025-03-04",
+        "actual": 0.0,
+        "sma_7": 6681.599999999999
+      },
+      {
+        "date": "2025-03-05",
+        "actual": 0.0,
+        "sma_7": 6681.599999999999
+      },
+      {
+        "date": "2025-03-06",
+        "actual": 0.0,
+        "sma_7": 6681.599999999999
+      },
+      {
+        "date": "2025-03-07",
+        "actual": 417316.91000000003,
+        "sma_7": 59616.70142857143
+      },
+      {
+        "date": "2025-03-08",
+        "actual": 96240.96,
+        "sma_7": 73365.41
+      },
+      {
+        "date": "2025-03-09",
+        "actual": 0.0,
+        "sma_7": 73365.41
+      },
+      {
+        "date": "2025-03-10",
+        "actual": 259697.19,
+        "sma_7": 110465.00857142858
+      },
+      {
+        "date": "2025-03-11",
+        "actual": 0.0,
+        "sma_7": 110465.00857142858
+      },
+      {
+        "date": "2025-03-12",
+        "actual": 0.0,
+        "sma_7": 110465.00857142858
+      },
+      {
+        "date": "2025-03-13",
+        "actual": 40077.16,
+        "sma_7": 116190.31714285715
+      },
+      {
+        "date": "2025-03-14",
+        "actual": 0.0,
+        "sma_7": 56573.61571428572
+      },
+      {
+        "date": "2025-03-15",
+        "actual": 76349.6,
+        "sma_7": 53731.99285714286
+      },
+      {
+        "date": "2025-03-16",
+        "actual": 0.0,
+        "sma_7": 53731.99285714286
+      },
+      {
+        "date": "2025-03-17",
+        "actual": 43082.6,
+        "sma_7": 22787.05142857143
+      },
+      {
+        "date": "2025-03-18",
+        "actual": 0.0,
+        "sma_7": 22787.05142857143
+      },
+      {
+        "date": "2025-03-19",
+        "actual": 0.0,
+        "sma_7": 22787.05142857143
+      },
+      {
+        "date": "2025-03-20",
+        "actual": 0.0,
+        "sma_7": 17061.742857142857
+      },
+      {
+        "date": "2025-03-21",
+        "actual": 184928.7,
+        "sma_7": 43480.12857142858
+      },
+      {
+        "date": "2025-03-22",
+        "actual": 55070.72,
+        "sma_7": 40440.28857142857
+      },
+      {
+        "date": "2025-03-23",
+        "actual": 34237.55,
+        "sma_7": 45331.36714285715
+      },
+      {
+        "date": "2025-03-24",
+        "actual": 315374.6,
+        "sma_7": 84230.2242857143
+      },
+      {
+        "date": "2025-03-25",
+        "actual": 109525.04,
+        "sma_7": 99876.65857142858
+      },
+      {
+        "date": "2025-03-26",
+        "actual": 168086.77000000002,
+        "sma_7": 123889.05428571429
+      },
+      {
+        "date": "2025-03-27",
+        "actual": 127911.52,
+        "sma_7": 142162.12857142856
+      },
+      {
+        "date": "2025-03-28",
+        "actual": 0.0,
+        "sma_7": 115743.74285714285
+      },
+      {
+        "date": "2025-03-29",
+        "actual": 0.0,
+        "sma_7": 107876.49714285714
+      },
+      {
+        "date": "2025-03-30",
+        "actual": 28145.96,
+        "sma_7": 107006.26999999999
+      },
+      {
+        "date": "2025-03-31",
+        "actual": 183602.2,
+        "sma_7": 88181.64142857143
+      },
+      {
+        "date": "2025-04-01",
+        "actual": 0.0,
+        "sma_7": 72535.20714285715
+      },
+      {
+        "date": "2025-04-02",
+        "actual": 317559.25,
+        "sma_7": 93888.41857142858
+      },
+      {
+        "date": "2025-04-03",
+        "actual": 0.0,
+        "sma_7": 75615.3442857143
+      },
+      {
+        "date": "2025-04-04",
+        "actual": 124666.06,
+        "sma_7": 93424.78142857143
+      },
+      {
+        "date": "2025-04-05",
+        "actual": 55361.58,
+        "sma_7": 101333.57857142857
+      },
+      {
+        "date": "2025-04-06",
+        "actual": 0.0,
+        "sma_7": 97312.72714285715
+      },
+      {
+        "date": "2025-04-07",
+        "actual": 116748.89,
+        "sma_7": 87762.25428571428
+      },
+      {
+        "date": "2025-04-08",
+        "actual": 0.0,
+        "sma_7": 87762.25428571428
+      },
+      {
+        "date": "2025-04-09",
+        "actual": 0.0,
+        "sma_7": 42396.647142857146
+      },
+      {
+        "date": "2025-04-10",
+        "actual": 293873.35,
+        "sma_7": 84378.55428571429
+      },
+      {
+        "date": "2025-04-11",
+        "actual": 50043.35,
+        "sma_7": 73718.16714285714
+      },
+      {
+        "date": "2025-04-12",
+        "actual": 0.0,
+        "sma_7": 65809.37
+      },
+      {
+        "date": "2025-04-13",
+        "actual": 0.0,
+        "sma_7": 65809.37
+      },
+      {
+        "date": "2025-04-14",
+        "actual": 0.0,
+        "sma_7": 49130.957142857136
+      },
+      {
+        "date": "2025-04-15",
+        "actual": 0.0,
+        "sma_7": 49130.957142857136
+      },
+      {
+        "date": "2025-04-16",
+        "actual": 0.0,
+        "sma_7": 49130.957142857136
+      },
+      {
+        "date": "2025-04-17",
+        "actual": 0.0,
+        "sma_7": 7149.05
+      },
+      {
+        "date": "2025-04-18",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-04-19",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-04-20",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-04-21",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-04-22",
+        "actual": 21644.83,
+        "sma_7": 3092.1185714285716
+      },
+      {
+        "date": "2025-04-23",
+        "actual": 0.0,
+        "sma_7": 3092.1185714285716
+      },
+      {
+        "date": "2025-04-24",
+        "actual": 0.0,
+        "sma_7": 3092.1185714285716
+      },
+      {
+        "date": "2025-04-25",
+        "actual": 0.0,
+        "sma_7": 3092.1185714285716
+      },
+      {
+        "date": "2025-04-26",
+        "actual": 0.0,
+        "sma_7": 3092.1185714285716
+      },
+      {
+        "date": "2025-04-27",
+        "actual": 0.0,
+        "sma_7": 3092.1185714285716
+      },
+      {
+        "date": "2025-04-28",
+        "actual": 0.0,
+        "sma_7": 3092.1185714285716
+      },
+      {
+        "date": "2025-04-29",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-04-30",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-05-01",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-05-02",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-05-03",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-05-04",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-05-05",
+        "actual": 41948.15,
+        "sma_7": 5992.592857142858
+      },
+      {
+        "date": "2025-05-06",
+        "actual": 0.0,
+        "sma_7": 5992.592857142858
+      },
+      {
+        "date": "2025-05-07",
+        "actual": 0.0,
+        "sma_7": 5992.592857142858
+      },
+      {
+        "date": "2025-05-08",
+        "actual": 0.0,
+        "sma_7": 5992.592857142858
+      },
+      {
+        "date": "2025-05-09",
+        "actual": 0.0,
+        "sma_7": 5992.592857142858
+      },
+      {
+        "date": "2025-05-10",
+        "actual": 0.0,
+        "sma_7": 5992.592857142858
+      },
+      {
+        "date": "2025-05-11",
+        "actual": 0.0,
+        "sma_7": 5992.592857142858
+      },
+      {
+        "date": "2025-05-12",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-05-13",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-05-14",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-05-15",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-05-16",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-05-17",
+        "actual": 110978.7,
+        "sma_7": 15854.1
+      },
+      {
+        "date": "2025-05-18",
+        "actual": 0.0,
+        "sma_7": 15854.1
+      },
+      {
+        "date": "2025-05-19",
+        "actual": 0.0,
+        "sma_7": 15854.1
+      },
+      {
+        "date": "2025-05-20",
+        "actual": 0.0,
+        "sma_7": 15854.1
+      },
+      {
+        "date": "2025-05-21",
+        "actual": 0.0,
+        "sma_7": 15854.1
+      },
+      {
+        "date": "2025-05-22",
+        "actual": 0.0,
+        "sma_7": 15854.1
+      },
+      {
+        "date": "2025-05-23",
+        "actual": 0.0,
+        "sma_7": 15854.1
+      },
+      {
+        "date": "2025-05-24",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-05-25",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-05-26",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-05-27",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-05-28",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-05-29",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-05-30",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-05-31",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-01",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-02",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-03",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-04",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-05",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-06",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-07",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-08",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-09",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-10",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-11",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-12",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-13",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-14",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-15",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-16",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-17",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-18",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-19",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-20",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-21",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-22",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-23",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-24",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-25",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-26",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-27",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-28",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-29",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-06-30",
+        "actual": 45441.75,
+        "sma_7": 6491.678571428572
+      },
+      {
+        "date": "2025-07-01",
+        "actual": 0.0,
+        "sma_7": 6491.678571428572
+      },
+      {
+        "date": "2025-07-02",
+        "actual": 0.0,
+        "sma_7": 6491.678571428572
+      },
+      {
+        "date": "2025-07-03",
+        "actual": 0.0,
+        "sma_7": 6491.678571428572
+      },
+      {
+        "date": "2025-07-04",
+        "actual": 0.0,
+        "sma_7": 6491.678571428572
+      },
+      {
+        "date": "2025-07-05",
+        "actual": 0.0,
+        "sma_7": 6491.678571428572
+      },
+      {
+        "date": "2025-07-06",
+        "actual": 0.0,
+        "sma_7": 6491.678571428572
+      },
+      {
+        "date": "2025-07-07",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-07-08",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-07-09",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-07-10",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-07-11",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-07-12",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-07-13",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-07-14",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-07-15",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-07-16",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-07-17",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-07-18",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-07-19",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-07-20",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-07-21",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-07-22",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-07-23",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-07-24",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-07-25",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-07-26",
+        "actual": 154517.36,
+        "sma_7": 22073.90857142857
+      },
+      {
+        "date": "2025-07-27",
+        "actual": 0.0,
+        "sma_7": 22073.90857142857
+      },
+      {
+        "date": "2025-07-28",
+        "actual": 0.0,
+        "sma_7": 22073.90857142857
+      },
+      {
+        "date": "2025-07-29",
+        "actual": 0.0,
+        "sma_7": 22073.90857142857
+      },
+      {
+        "date": "2025-07-30",
+        "actual": 0.0,
+        "sma_7": 22073.90857142857
+      },
+      {
+        "date": "2025-07-31",
+        "actual": 0.0,
+        "sma_7": 22073.90857142857
+      },
+      {
+        "date": "2025-08-01",
+        "actual": 0.0,
+        "sma_7": 22073.90857142857
+      },
+      {
+        "date": "2025-08-02",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-08-03",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-08-04",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-08-05",
+        "actual": 107193.0,
+        "sma_7": 15313.285714285714
+      },
+      {
+        "date": "2025-08-06",
+        "actual": 0.0,
+        "sma_7": 15313.285714285714
+      },
+      {
+        "date": "2025-08-07",
+        "actual": 44880.16,
+        "sma_7": 21724.737142857142
+      },
+      {
+        "date": "2025-08-08",
+        "actual": 0.0,
+        "sma_7": 21724.737142857142
+      },
+      {
+        "date": "2025-08-09",
+        "actual": 0.0,
+        "sma_7": 21724.737142857142
+      },
+      {
+        "date": "2025-08-10",
+        "actual": 0.0,
+        "sma_7": 21724.737142857142
+      },
+      {
+        "date": "2025-08-11",
+        "actual": 0.0,
+        "sma_7": 21724.737142857142
+      },
+      {
+        "date": "2025-08-12",
+        "actual": 0.0,
+        "sma_7": 6411.4514285714295
+      },
+      {
+        "date": "2025-08-13",
+        "actual": 0.0,
+        "sma_7": 6411.4514285714295
+      },
+      {
+        "date": "2025-08-14",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-08-15",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-08-16",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-08-17",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-08-18",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-08-19",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-08-20",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-08-21",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-08-22",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-08-23",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-08-24",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-08-25",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-08-26",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-08-27",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-08-28",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-08-29",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-08-30",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-08-31",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-01",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-02",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-03",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-04",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-05",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-06",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-07",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-08",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-09",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-10",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-11",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-12",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-13",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-14",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-15",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-16",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-17",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-18",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-19",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-20",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-21",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-22",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-23",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-24",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-25",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-26",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-27",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-28",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-29",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-09-30",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-01",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-02",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-03",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-04",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-05",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-06",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-07",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-08",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-09",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-10",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-11",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-12",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-13",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-14",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-15",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-16",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-17",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-18",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-19",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-20",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-21",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-22",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-23",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-24",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-25",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-26",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-27",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-28",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-29",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-30",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-10-31",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-11-01",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-11-02",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-11-03",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-11-04",
+        "actual": 305074.0,
+        "sma_7": 43582.0
+      },
+      {
+        "date": "2025-11-05",
+        "actual": 0.0,
+        "sma_7": 43582.0
+      },
+      {
+        "date": "2025-11-06",
+        "actual": 0.0,
+        "sma_7": 43582.0
+      },
+      {
+        "date": "2025-11-07",
+        "actual": 0.0,
+        "sma_7": 43582.0
+      },
+      {
+        "date": "2025-11-08",
+        "actual": 0.0,
+        "sma_7": 43582.0
+      },
+      {
+        "date": "2025-11-09",
+        "actual": 0.0,
+        "sma_7": 43582.0
+      },
+      {
+        "date": "2025-11-10",
+        "actual": 0.0,
+        "sma_7": 43582.0
+      },
+      {
+        "date": "2025-11-11",
+        "actual": 141695.0,
+        "sma_7": 20242.14285714286
+      },
+      {
+        "date": "2025-11-12",
+        "actual": 0.0,
+        "sma_7": 20242.14285714286
+      },
+      {
+        "date": "2025-11-13",
+        "actual": 0.0,
+        "sma_7": 20242.14285714286
+      },
+      {
+        "date": "2025-11-14",
+        "actual": 0.0,
+        "sma_7": 20242.14285714286
+      },
+      {
+        "date": "2025-11-15",
+        "actual": 0.0,
+        "sma_7": 20242.14285714286
+      },
+      {
+        "date": "2025-11-16",
+        "actual": 0.0,
+        "sma_7": 20242.14285714286
+      },
+      {
+        "date": "2025-11-17",
+        "actual": 0.0,
+        "sma_7": 20242.14285714286
+      },
+      {
+        "date": "2025-11-18",
+        "actual": 31513.0,
+        "sma_7": 4501.857142857143
+      },
+      {
+        "date": "2025-11-19",
+        "actual": 0.0,
+        "sma_7": 4501.857142857143
+      },
+      {
+        "date": "2025-11-20",
+        "actual": 0.0,
+        "sma_7": 4501.857142857143
+      },
+      {
+        "date": "2025-11-21",
+        "actual": 0.0,
+        "sma_7": 4501.857142857143
+      },
+      {
+        "date": "2025-11-22",
+        "actual": 92240.0,
+        "sma_7": 17679.0
+      },
+      {
+        "date": "2025-11-23",
+        "actual": 0.0,
+        "sma_7": 17679.0
+      },
+      {
+        "date": "2025-11-24",
+        "actual": 0.0,
+        "sma_7": 17679.0
+      },
+      {
+        "date": "2025-11-25",
+        "actual": 0.0,
+        "sma_7": 13177.142857142857
+      },
+      {
+        "date": "2025-11-26",
+        "actual": 0.0,
+        "sma_7": 13177.142857142857
+      },
+      {
+        "date": "2025-11-27",
+        "actual": 0.0,
+        "sma_7": 13177.142857142857
+      },
+      {
+        "date": "2025-11-28",
+        "actual": 211925.0,
+        "sma_7": 43452.142857142855
+      },
+      {
+        "date": "2025-11-29",
+        "actual": 0.0,
+        "sma_7": 30275.0
+      },
+      {
+        "date": "2025-11-30",
+        "actual": 0.0,
+        "sma_7": 30275.0
+      },
+      {
+        "date": "2025-12-01",
+        "actual": 0.0,
+        "sma_7": 30275.0
+      },
+      {
+        "date": "2025-12-02",
+        "actual": 0.0,
+        "sma_7": 30275.0
+      },
+      {
+        "date": "2025-12-03",
+        "actual": 0.0,
+        "sma_7": 30275.0
+      },
+      {
+        "date": "2025-12-04",
+        "actual": 0.0,
+        "sma_7": 30275.0
+      },
+      {
+        "date": "2025-12-05",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-12-06",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-12-07",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-12-08",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-12-09",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-12-10",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-12-11",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-12-12",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-12-13",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-12-14",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-12-15",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-12-16",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-12-17",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-12-18",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-12-19",
+        "actual": 44695.0,
+        "sma_7": 6385.0
+      },
+      {
+        "date": "2025-12-20",
+        "actual": 0.0,
+        "sma_7": 6385.0
+      },
+      {
+        "date": "2025-12-21",
+        "actual": 0.0,
+        "sma_7": 6385.0
+      },
+      {
+        "date": "2025-12-22",
+        "actual": 0.0,
+        "sma_7": 6385.0
+      },
+      {
+        "date": "2025-12-23",
+        "actual": 0.0,
+        "sma_7": 6385.0
+      },
+      {
+        "date": "2025-12-24",
+        "actual": 0.0,
+        "sma_7": 6385.0
+      },
+      {
+        "date": "2025-12-25",
+        "actual": 0.0,
+        "sma_7": 6385.0
+      },
+      {
+        "date": "2025-12-26",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-12-27",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-12-28",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-12-29",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-12-30",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2025-12-31",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2026-01-01",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2026-01-02",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2026-01-03",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2026-01-04",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2026-01-05",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2026-01-06",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2026-01-07",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2026-01-08",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2026-01-09",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2026-01-10",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2026-01-11",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2026-01-12",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2026-01-13",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2026-01-14",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2026-01-15",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2026-01-16",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2026-01-17",
+        "actual": 0.0,
+        "sma_7": 0.0
+      },
+      {
+        "date": "2026-01-18",
+        "actual": 59000.0,
+        "sma_7": 8428.57142857143
+      },
+      {
+        "date": "2026-01-19",
+        "actual": 72425.0,
+        "sma_7": 18775.0
+      },
+      {
+        "date": "2026-01-20",
+        "actual": 0.0,
+        "sma_7": 18775.0
+      },
+      {
+        "date": "2026-01-21",
+        "actual": 0.0,
+        "sma_7": 18775.0
+      },
+      {
+        "date": "2026-01-22",
+        "actual": 0.0,
+        "sma_7": 18775.0
+      },
+      {
+        "date": "2026-01-23",
+        "actual": 398980.0,
+        "sma_7": 75772.14285714286
+      },
+      {
+        "date": "2026-01-24",
+        "actual": 92100.0,
+        "sma_7": 88929.28571428571
+      },
+      {
+        "date": "2026-01-25",
+        "actual": 82890.0,
+        "sma_7": 92342.14285714286
+      },
+      {
+        "date": "2026-01-26",
+        "actual": 141100.0,
+        "sma_7": 102152.85714285714
+      },
+      {
+        "date": "2026-01-27",
+        "actual": 561461.8200000001,
+        "sma_7": 182361.6885714286
+      },
+      {
+        "date": "2026-01-28",
+        "actual": 0.0,
+        "sma_7": 182361.6885714286
+      },
+      {
+        "date": "2026-01-29",
+        "actual": 88955.21,
+        "sma_7": 195069.57571428572
+      },
+      {
+        "date": "2026-01-30",
+        "actual": 120576.03,
+        "sma_7": 155297.58000000002
+      },
+      {
+        "date": "2026-01-31",
+        "actual": 275359.66000000003,
+        "sma_7": 181477.53142857147
+      },
+      {
+        "date": "2026-02-01",
+        "actual": 472214.15,
+        "sma_7": 237095.26714285716
+      }
+    ],
+    "forecasts": [
+      {
+        "date": "2026-02-02",
+        "forecast": 400370.0303149948,
+        "lower_bound": 280259.02122049633,
+        "upper_bound": 520481.03940949327
+      },
+      {
+        "date": "2026-02-03",
+        "forecast": 326923.62111733906,
+        "lower_bound": 228846.53478213734,
+        "upper_bound": 425000.7074525408
+      },
+      {
+        "date": "2026-02-04",
+        "forecast": 153847.77304349,
+        "lower_bound": 107693.44113044298,
+        "upper_bound": 200002.104956537
+      },
+      {
+        "date": "2026-02-05",
+        "forecast": 170716.48016785894,
+        "lower_bound": 119501.53611750125,
+        "upper_bound": 221931.42421821662
+      },
+      {
+        "date": "2026-02-06",
+        "forecast": 441749.98783653945,
+        "lower_bound": 309224.9914855776,
+        "upper_bound": 574274.9841875014
+      },
+      {
+        "date": "2026-02-07",
+        "forecast": 215915.1284430182,
+        "lower_bound": 151140.58991011273,
+        "upper_bound": 280689.6669759237
+      },
+      {
+        "date": "2026-02-08",
+        "forecast": 140344.76792247914,
+        "lower_bound": 98241.33754573538,
+        "upper_bound": 182448.1982992229
+      },
+      {
+        "date": "2026-02-09",
+        "forecast": 426187.97777702555,
+        "lower_bound": 298331.58444391785,
+        "upper_bound": 554044.3711101332
+      },
+      {
+        "date": "2026-02-10",
+        "forecast": 306055.6552277512,
+        "lower_bound": 214238.9586594258,
+        "upper_bound": 397872.3517960766
+      },
+      {
+        "date": "2026-02-11",
+        "forecast": 158619.95406959453,
+        "lower_bound": 111033.96784871617,
+        "upper_bound": 206205.9402904729
+      },
+      {
+        "date": "2026-02-12",
+        "forecast": 187338.7521968164,
+        "lower_bound": 131137.1265377715,
+        "upper_bound": 243540.37785586133
+      },
+      {
+        "date": "2026-02-13",
+        "forecast": 484530.0433841036,
+        "lower_bound": 339171.0303688725,
+        "upper_bound": 629889.0563993347
+      },
+      {
+        "date": "2026-02-14",
+        "forecast": 267333.7774294408,
+        "lower_bound": 187133.64420060857,
+        "upper_bound": 347533.9106582731
+      },
+      {
+        "date": "2026-02-15",
+        "forecast": 230758.4395671012,
+        "lower_bound": 161530.90769697083,
+        "upper_bound": 299985.9714372316
+      },
+      {
+        "date": "2026-02-16",
+        "forecast": 453653.4383104183,
+        "lower_bound": 317557.4068172928,
+        "upper_bound": 589749.4698035438
+      },
+      {
+        "date": "2026-02-17",
+        "forecast": 292087.99109560455,
+        "lower_bound": 204461.59376692318,
+        "upper_bound": 379714.3884242859
+      },
+      {
+        "date": "2026-02-18",
+        "forecast": 183435.94675668512,
+        "lower_bound": 128405.16272967958,
+        "upper_bound": 238466.73078369067
+      },
+      {
+        "date": "2026-02-19",
+        "forecast": 218966.60890219372,
+        "lower_bound": 153276.6262315356,
+        "upper_bound": 284656.5915728519
+      },
+      {
+        "date": "2026-02-20",
+        "forecast": 317749.34454579995,
+        "lower_bound": 222424.54118205994,
+        "upper_bound": 413074.1479095399
+      },
+      {
+        "date": "2026-02-21",
+        "forecast": 269894.4617715912,
+        "lower_bound": 188926.12324011384,
+        "upper_bound": 350862.8003030686
+      },
+      {
+        "date": "2026-02-22",
+        "forecast": 167531.32635932963,
+        "lower_bound": 117271.92845153074,
+        "upper_bound": 217790.72426712853
+      },
+      {
+        "date": "2026-02-23",
+        "forecast": 477813.3946442447,
+        "lower_bound": 334469.3762509713,
+        "upper_bound": 621157.4130375182
+      },
+      {
+        "date": "2026-02-24",
+        "forecast": 384710.6429169536,
+        "lower_bound": 269297.4500418675,
+        "upper_bound": 500123.8357920397
+      },
+      {
+        "date": "2026-02-25",
+        "forecast": 156980.4872698436,
+        "lower_bound": 109886.34108889052,
+        "upper_bound": 204074.6334507967
+      },
+      {
+        "date": "2026-02-26",
+        "forecast": 180351.78465619072,
+        "lower_bound": 126246.24925933349,
+        "upper_bound": 234457.32005304794
+      },
+      {
+        "date": "2026-02-27",
+        "forecast": 461461.6861097396,
+        "lower_bound": 323023.1802768177,
+        "upper_bound": 599900.1919426615
+      },
+      {
+        "date": "2026-02-28",
+        "forecast": 309464.82391151524,
+        "lower_bound": 216625.37673806064,
+        "upper_bound": 402304.2710849698
+      },
+      {
+        "date": "2026-03-01",
+        "forecast": 194851.22540808129,
+        "lower_bound": 136395.8577856569,
+        "upper_bound": 253306.59303050567
+      },
+      {
+        "date": "2026-03-02",
+        "forecast": 435794.56365196884,
+        "lower_bound": 305056.1945563782,
+        "upper_bound": 566532.9327475595
+      },
+      {
+        "date": "2026-03-03",
+        "forecast": 347431.5843472628,
+        "lower_bound": 243202.10904308394,
+        "upper_bound": 451661.05965144164
+      }
+    ],
+    "summary": {
+      "daily_avg": 12437.987560553634,
+      "daily_std": 54389.3009285036,
+      "forecast_30d_total": 8762871.699154975,
+      "forecast_30d_avg": 292095.7233051658,
+      "monthly_projection": 8762871.699154975,
+      "quarterly_projection": 26288615.097464927,
+      "trend_percentage": 7.159476776426449
+    },
+    "weekly_pattern": [
+      {
+        "day": "Lunes",
+        "avg_sales": 16072.97048780488
+      },
+      {
+        "day": "Martes",
+        "avg_sales": 16068.128902439024
+      },
+      {
+        "day": "Miercoles",
+        "avg_sales": 6964.436341463415
+      },
+      {
+        "day": "Jueves",
+        "avg_sales": 8016.840722891567
+      },
+      {
+        "day": "Viernes",
+        "avg_sales": 19275.930722891568
+      },
+      {
+        "day": "Sabado",
+        "avg_sales": 12147.211807228916
+      },
+      {
+        "day": "Domingo",
+        "avg_sales": 8541.979156626507
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": 201858714,
+      "name": "Caiman - 3 a 4,5 mts - Spinning/Trolling",
+      "price": 0,
+      "stock": 0,
+      "variants": 6
+    },
+    {
+      "id": 201937985,
+      "name": "Canibal - 0,2 a 1 mts - Spinning",
+      "price": 0,
+      "stock": 0,
+      "variants": 10
+    },
+    {
+      "id": 201941960,
+      "name": "TNT 95 - Superficie",
+      "price": 0,
+      "stock": 0,
+      "variants": 11
+    },
+    {
+      "id": 202044227,
+      "name": "Turbo 115 - Superficie",
+      "price": 0,
+      "stock": 0,
+      "variants": 5
+    },
+    {
+      "id": 202430876,
+      "name": "Linterna Farol",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 202430881,
+      "name": "Linterna Scubaglow",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 202430885,
+      "name": "Linterna Campglow",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 202430887,
+      "name": "Linterna Eco Recargable",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 202430890,
+      "name": "Linterna Carglow 12v",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 202430892,
+      "name": "Linterna A1",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 202430895,
+      "name": "Linterna D3 High Power",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 202430896,
+      "name": "Cuchillo Táctico Mini-Tac",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 202430899,
+      "name": "Cuchillo Táctico Shark",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 202430902,
+      "name": "Cuchillo Táctico Digital Camo",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 202430903,
+      "name": "Cuchillo Táctico Raptor",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 202430905,
+      "name": "Cuchillo Táctico Hook",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 202430906,
+      "name": "Cuchillo de Pesca Fillet",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 202430907,
+      "name": "Cuchillo de Pesca Skinning",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 202430910,
+      "name": "Cuchillo Premium Bowie",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 202430912,
+      "name": "Navaja Táctica Skull",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 202430914,
+      "name": "TAPÓN DE MATE EXPLORER",
+      "price": 0,
+      "stock": 0,
+      "variants": 3
+    },
+    {
+      "id": 202430920,
+      "name": "Termo Clásico 1.3 lt",
+      "price": 0,
+      "stock": 0,
+      "variants": 2
+    },
+    {
+      "id": 202430926,
+      "name": "Termo Explorer 1 litro: Calor por Horas, Sin Fugas",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 202430932,
+      "name": "Vaso Térmico Clásico 750 ml",
+      "price": 0,
+      "stock": 0,
+      "variants": 2
+    },
+    {
+      "id": 202430934,
+      "name": "MATE EXPLORER BLACK",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 202430936,
+      "name": "MATE EXPLORER BLUE",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 202430937,
+      "name": "MATE EXPLORER GREEN",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 251210703,
+      "name": "Combo Baitcast 7 Unidades - Diseñado para el Dorado",
+      "price": 0,
+      "stock": 0,
+      "variants": 2
+    },
+    {
+      "id": 251212672,
+      "name": "Combo Trolling 15 Unidades + Termo de Regalo",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 251213818,
+      "name": "Combo Spinning 15 Unidades + Termo de Regalo",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    },
+    {
+      "id": 268340601,
+      "name": "Mojarra 120 - 0,5 a 9 mts - Baitcast/Trolling",
+      "price": 0,
+      "stock": 0,
+      "variants": 56
+    },
+    {
+      "id": 268351818,
+      "name": "Mojarra 90 - 0,3 a 6 mts - Baitcast/Trolling",
+      "price": 0,
+      "stock": 0,
+      "variants": 42
+    },
+    {
+      "id": 268357424,
+      "name": "Cascarudo 125 - 0,5 a 13 mts - Trolling/Baitcast",
+      "price": 0,
+      "stock": 0,
+      "variants": 44
+    },
+    {
+      "id": 269042950,
+      "name": "Morena 155 - 3 a 15 mts - Trolling/Baitcast",
+      "price": 0,
+      "stock": 0,
+      "variants": 22
+    },
+    {
+      "id": 269119214,
+      "name": "Tabano 60 - 0,8 a 1,5 mts - Spinning/Baitcast",
+      "price": 0,
+      "stock": 0,
+      "variants": 21
+    },
+    {
+      "id": 269130475,
+      "name": "Tabano 50 - 0,8 a 2 mts - Spinning/Baitcast",
+      "price": 0,
+      "stock": 0,
+      "variants": 14
+    },
+    {
+      "id": 269138522,
+      "name": "Extreme 140 - 2,5 a 15 mts - Baitcast/Trolling",
+      "price": 0,
+      "stock": 0,
+      "variants": 24
+    },
+    {
+      "id": 269153774,
+      "name": "Extreme 110 - 1 a 7 mts - Baitcast/Trolling",
+      "price": 0,
+      "stock": 0,
+      "variants": 24
+    },
+    {
+      "id": 269214367,
+      "name": "TNT 140 - Superficie",
+      "price": 0,
+      "stock": 0,
+      "variants": 11
+    },
+    {
+      "id": 269214827,
+      "name": "TNT 110 - Superficie",
+      "price": 0,
+      "stock": 0,
+      "variants": 11
+    },
+    {
+      "id": 304703236,
+      "name": "Termo Explorer 1 lt - (copia)",
+      "price": 0,
+      "stock": 0,
+      "variants": 1
+    }
+  ]
+}
