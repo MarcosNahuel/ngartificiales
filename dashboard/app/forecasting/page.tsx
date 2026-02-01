@@ -80,7 +80,7 @@ export default function ForecastingPage() {
                 stroke="#9ca3af"
                 tickFormatter={(value) => `$${(value/1000).toFixed(0)}K`}
               />
-              <Tooltip formatter={(value) => formatCurrency(Number(value) || 0)} />
+              <Tooltip formatter={(value: number | string) => formatCurrency(Number(value) || 0)} />
               <Area type="monotone" dataKey="upper" stroke="none" fill="#bbf7d0" />
               <Area type="monotone" dataKey="lower" stroke="none" fill="#ffffff" />
               <Line type="monotone" dataKey="forecast" stroke="#22c55e" strokeWidth={3} dot={false} />

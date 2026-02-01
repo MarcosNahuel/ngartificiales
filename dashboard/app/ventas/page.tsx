@@ -62,7 +62,7 @@ export default function VentasPage() {
                 tickFormatter={(value) => `$${(value/1000).toFixed(0)}K`}
               />
               <Tooltip
-                formatter={(value) => [formatCurrency(Number(value) || 0), 'Ventas']}
+                formatter={(value: number | string) => [formatCurrency(Number(value) || 0), 'Ventas']}
                 contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
               />
               <Bar dataKey="revenue" fill="#3b82f6" radius={[8, 8, 0, 0]} />

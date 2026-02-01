@@ -42,7 +42,7 @@ export function WeekdayChart({ data }: WeekdayChartProps) {
               axisLine={false}
             />
             <Tooltip
-              formatter={(value) => [formatCurrency(Number(value) || 0), 'Ventas']}
+              formatter={(value: number | string) => [formatCurrency(Number(value) || 0), 'Ventas']}
               contentStyle={{
                 borderRadius: '12px',
                 border: 'none',

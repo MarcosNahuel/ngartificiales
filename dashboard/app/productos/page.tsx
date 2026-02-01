@@ -79,7 +79,7 @@ export default function ProductosPage() {
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                   ))}
                 </Pie>
-                <Tooltip formatter={(value) => formatCurrency(Number(value) || 0)} />
+                <Tooltip formatter={(value: number | string) => formatCurrency(Number(value) || 0)} />
                 <Legend />
               </PieChart>
             </ChartContainer>

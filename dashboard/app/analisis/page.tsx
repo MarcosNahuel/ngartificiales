@@ -110,7 +110,7 @@ export default function AnalisisPage() {
                 stroke="#9ca3af"
                 tickFormatter={(value) => `$${(value/1000).toFixed(0)}K`}
               />
-              <Tooltip formatter={(value) => formatCurrency(Number(value) || 0)} />
+              <Tooltip formatter={(value: number | string) => formatCurrency(Number(value) || 0)} />
               <Area type="monotone" dataKey="sales" stroke="#3b82f6" fill="url(#colorSales)" strokeWidth={2} name="Ventas" />
               <Line type="monotone" dataKey="sma" stroke="#f59e0b" strokeWidth={2} dot={false} name="SMA-4" />
               <Area type="monotone" dataKey="upper" stroke="none" fill="#bbf7d0" name="Banda Sup." />
@@ -148,7 +148,7 @@ export default function AnalisisPage() {
                 <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
                 <XAxis type="number" domain={[-0.5, 1]} tick={{ fontSize: 10 }} />
                 <YAxis dataKey="lag" type="category" tick={{ fontSize: 10 }} width={30} />
-                <Tooltip formatter={(value) => (Number(value) || 0).toFixed(3)} />
+                <Tooltip formatter={(value: number | string) => (Number(value) || 0).toFixed(3)} />
                 <ReferenceLine x={0.3} stroke="#22c55e" strokeDasharray="3 3" label={{ value: 'Sig.', fontSize: 9 }} />
                 <ReferenceLine x={-0.3} stroke="#ef4444" strokeDasharray="3 3" />
                 <Bar dataKey="correlation" name="Correlacion">
@@ -179,7 +179,7 @@ export default function AnalisisPage() {
                 <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
                 <XAxis dataKey="month" tick={{ fontSize: 10 }} />
                 <YAxis tick={{ fontSize: 10 }} tickFormatter={(value) => `$${(value/1000).toFixed(0)}K`} />
-                <Tooltip formatter={(value) => formatCurrency(Number(value) || 0)} />
+                <Tooltip formatter={(value: number | string) => formatCurrency(Number(value) || 0)} />
                 <Bar dataKey="avg" name="Promedio" fill="#8b5cf6" radius={[4, 4, 0, 0]}>
                   {monthlyPattern.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={entry.avg > 100000 ? '#22c55e' : entry.avg > 50000 ? '#3b82f6' : '#d1d5db'} />
@@ -216,10 +216,10 @@ export default function AnalisisPage() {
               <YAxis yAxisId="left" tick={{ fontSize: 10 }} tickFormatter={(value) => `$${(value/1000).toFixed(0)}K`} />
               <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 10 }} tickFormatter={(value) => `${value}%`} domain={[0, 100]} />
               <Tooltip
-                formatter={(value, name) =>
+                formatter={(value: number | string, name: string | number) =>
                   name === 'cumulative' ? `${(Number(value) || 0).toFixed(1)}%` : formatCurrency(Number(value) || 0)
                 }
-                labelFormatter={(label, payload) => payload?.[0]?.payload?.fullName || label}
+                labelFormatter={(label: string, payload: Array<{ payload?: { fullName?: string } }>) => payload?.[0]?.payload?.fullName || label}
               />
               <ReferenceLine yAxisId="right" y={80} stroke="#ef4444" strokeDasharray="3 3" label={{ value: '80%', fontSize: 10, fill: '#ef4444' }} />
               <Bar yAxisId="left" dataKey="revenue" name="Revenue">

@@ -53,8 +53,8 @@ export function SegmentChart({ segments }: SegmentChartProps) {
               ))}
             </Pie>
             <Tooltip
-              formatter={(value, name, props) => [
-                `${formatNumber(Number(value) || 0)} clientes - ${formatCurrency((props?.payload as { revenue?: number })?.revenue || 0)}`,
+              formatter={(value: number | string, name: string | number, props: { payload?: { revenue?: number } }) => [
+                `${formatNumber(Number(value) || 0)} clientes - ${formatCurrency(props?.payload?.revenue || 0)}`,
                 String(name)
               ]}
               contentStyle={{

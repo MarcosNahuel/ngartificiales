@@ -103,7 +103,7 @@ export function SalesChart({ data, forecasts }: SalesChartProps) {
               axisLine={false}
             />
             <Tooltip
-              formatter={(value) => [formatCurrency(Number(value) || 0), '']}
+              formatter={(value: number | string) => [formatCurrency(Number(value) || 0), '']}
               contentStyle={{
                 borderRadius: '12px',
                 border: 'none',
